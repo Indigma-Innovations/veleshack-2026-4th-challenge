@@ -198,8 +198,9 @@ kick-off:
 - [ ] Your README, with the 300-word strategy write-up and all team members named.
       What you tried, what you measured, what did not work — `docs/strategy-primer.md`
       section 8 says what earns the Insight marks
-- [ ] A three-minute demo video, or confirmation that you will pitch live
+- [ ] A presentation of your work using the 3 slides template that the organizers shared.
 - [ ] Optionally, a screenshot or `results.json` from your best local run
+- [ ] Confirmation that you will pitch live if you are picked for the final selection.
 
 Before you submit, check the boring things — this is where strong teams lose
 points. Your repository must clone and build on a machine that has never seen
