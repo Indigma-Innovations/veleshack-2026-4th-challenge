@@ -88,4 +88,4 @@ The main cost is latency. Serial mean decisions were 99 versus 29 ms. Both passe
 Read [evaluation](docs/evaluation.md) for seed cohorts, selected experiments, score/win tables, HTTP faults, lease recovery and latency. Read
 [methodology](docs/methodology.md) for exact inputs, equations, candidate search,  continuation and fallback. The [comparison figure](evidence/figures/paired-scores.png) and [paired CSV](evidence/paired-scores.csv) retain all 1,000 final comparisons. Evidence is historical unless explicitly marked as release verification.
 
-See [local development](docs/local-development.md) for native setup, a fresh graded run and verification commands. [Release validation](docs/release-validation.md) records the checks on this branch. The original organizer introduction is preserved in [organizer guide](docs/organizer-guide.md); its broader quickstart, API and strategy primer remain in `docs/`.
+See [local development](docs/local-development.md) for native setup, a fresh graded run and verification commands.
