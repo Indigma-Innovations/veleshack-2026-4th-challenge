@@ -1,0 +1,39 @@
+{
+  "initial_commit": "6ce77833af78d0e0c4f1b2bd8184265e308f5556",
+  "research_commit": "d4342cd",
+  "note": "Historical measurements; descriptive labels substituted and unrelated model metadata omitted. Release source equivalence is validated separately.",
+  "source_sha256": {
+    "paired-scores.csv": "a6951126f4a13dd30be799812e8b23707e7a6714e159ac0a23f8c593bbb52700",
+    "paired-analysis.json": "7ba5c9d3bf6807b89a728f5c523dead63fd382a76195edc7200b169641ac7147",
+    "assessment.json": "e7254ea75fd16e0c43e9be201f8f8df46cada1034289ceac5d2b5d5e66a644bb",
+    "prior_retained_run_results.json": "8e822bbb2599b69589c50e132ee96d65b613735dd453904b4aea86999a9f2d90"
+  },
+  "final_seed_range": [
+    20001,
+    21000
+  ],
+  "early_seed_range": [
+    1001,
+    1100
+  ],
+  "lookahead_seed_range": [
+    5001,
+    5100
+  ],
+  "paired_measurement_source_commit": "28285dfd8a25d8e783c2ca6a5590b71b6acd7133",
+  "archived_policy_source_commit": "d4342cd",
+  "release_note": "Original source hash covers the development module; no fitted-model artifact participates in either selected policy.",
+  "best_run": {
+    "kind": "fresh release HTTP verification",
+    "seed": 16001,
+    "started_at_utc": "20261006T133539.248970Z",
+    "score": 20.3936,
+    "screenshot": "Labeled replay of the exact saved completion state; original arena dashboard",
+    "replaces_historical_retained_best_score": 19.1667
+  },
+  "packaging_normalization": {
+    "description": "Text files use LF in the release. Removed trailing blank lines from planner.py after the recorded parity check and HTTP run; no executable token changed. Run metadata retains the actual tested source hash.",
+    "planner_at_run_sha256": "3d9eb54768be06f8581b8c3595e277d25ef72f92041beff28c2030007539a15a",
+    "planner_in_release_sha256": "04658feaa2550d8a0d89ed131c9bc908e9a002ddc09a6b984af3c2716f7c135c"
+  }
+}

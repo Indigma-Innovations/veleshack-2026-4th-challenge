@@ -1,0 +1,78 @@
+{
+  "checks": [
+    {
+      "number": 1,
+      "name": "Registers within 30 s",
+      "hard": true,
+      "passed": true,
+      "detail": "after 0.8s"
+    },
+    {
+      "number": 2,
+      "name": "Stayed inside the 12s lease window",
+      "hard": true,
+      "passed": true,
+      "detail": "missed 0 of 8 eligible rounds"
+    },
+    {
+      "number": 3,
+      "name": "Valid in-budget bid in >= 95% of eligible rounds",
+      "hard": true,
+      "passed": true,
+      "detail": "8/8 eligible (100%); 7 rounds resting on a flat battery (not counted)"
+    },
+    {
+      "number": 4,
+      "name": "No protocol penalties (kappa == 0)",
+      "hard": true,
+      "passed": true,
+      "detail": "kappa=0.00"
+    },
+    {
+      "number": 5,
+      "name": "Survived injected 503/429 without exiting",
+      "hard": true,
+      "passed": true,
+      "detail": "28 faults injected"
+    },
+    {
+      "number": 6,
+      "name": "Kept its lease alive for the whole run",
+      "hard": false,
+      "passed": true,
+      "detail": "no rounds missed"
+    },
+    {
+      "number": 7,
+      "name": "Handled inadmissible rounds without exiting",
+      "hard": false,
+      "passed": true,
+      "detail": "battery ended at 0.22"
+    },
+    {
+      "number": 8,
+      "name": "Exited on terminate (Windows: no SIGTERM)",
+      "hard": false,
+      "passed": true,
+      "detail": "exit code 0"
+    }
+  ],
+  "summary": {
+    "team": "CardanoEdge",
+    "rounds_total": 15,
+    "rounds_eligible": 8,
+    "rounds_participated": 8,
+    "rounds_missed": 0,
+    "rounds_idle": 7,
+    "bid_ratio": 1.0,
+    "floor_violations": 0,
+    "compromise": 0.0,
+    "ejected": false,
+    "score": 7.9634,
+    "faults_injected": 28,
+    "crashed_at_round": null,
+    "functional_points": 30.0,
+    "resilience_points": 20.0
+  },
+  "passed": true
+}

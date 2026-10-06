@@ -1,0 +1,70 @@
+{
+  "Template": {
+    "seeds": 100,
+    "mean_score": 13.509538,
+    "mean_idle": 18.64,
+    "mean_floor_violations": 2.04,
+    "mean_lsw_total": -186.49391035,
+    "beat_all_bots": 0,
+    "missed_rounds": 0,
+    "mean_paired_gain_percent": 0.0,
+    "paired_gain_approx_95ci": [
+      0.0,
+      0.0
+    ],
+    "improved_seeds": 0,
+    "mean_neighbors_delta": 0.0,
+    "mean_lsw_delta": 0.0
+  },
+  "Battery Taper": {
+    "seeds": 100,
+    "mean_score": 16.827151,
+    "mean_idle": 4.4,
+    "mean_floor_violations": 0.5,
+    "mean_lsw_total": -203.29331977,
+    "beat_all_bots": 95,
+    "missed_rounds": 0,
+    "mean_paired_gain_percent": 25.014791781696363,
+    "paired_gain_approx_95ci": [
+      22.190958126743162,
+      27.838625436649565
+    ],
+    "improved_seeds": 100,
+    "mean_neighbors_delta": -5.985887,
+    "mean_lsw_delta": -16.79940942
+  },
+  "Market + Floors": {
+    "seeds": 100,
+    "mean_score": 14.77261,
+    "mean_idle": 18.52,
+    "mean_floor_violations": 2.05,
+    "mean_lsw_total": -182.10848944,
+    "beat_all_bots": 26,
+    "missed_rounds": 0,
+    "mean_paired_gain_percent": 9.60513982838622,
+    "paired_gain_approx_95ci": [
+      7.758287841056209,
+      11.45199181571623
+    ],
+    "improved_seeds": 89,
+    "mean_neighbors_delta": -1.0586680000000002,
+    "mean_lsw_delta": 4.385420910000001
+  },
+  "Guarded Kelly": {
+    "seeds": 100,
+    "mean_score": 16.815165,
+    "mean_idle": 4.37,
+    "mean_floor_violations": 0.34,
+    "mean_lsw_total": -202.80097881,
+    "beat_all_bots": 95,
+    "missed_rounds": 0,
+    "mean_paired_gain_percent": 24.93970580074077,
+    "paired_gain_approx_95ci": [
+      22.049297897552155,
+      27.83011370392939
+    ],
+    "improved_seeds": 99,
+    "mean_neighbors_delta": -5.876339000000001,
+    "mean_lsw_delta": -16.30706846
+  }
+}

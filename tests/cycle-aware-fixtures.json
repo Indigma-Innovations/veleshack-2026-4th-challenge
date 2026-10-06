@@ -1,0 +1,4969 @@
+[
+  {
+    "seed": 20033,
+    "round": 1,
+    "inputs": {
+      "budget": 0.809089,
+      "prices": {
+        "compute": 1.0,
+        "energy": 1.0,
+        "security": 1.0
+      },
+      "capacities": {
+        "compute": 0.8123,
+        "energy": 1.0325,
+        "security": 0.7546
+      },
+      "profile": {
+        "features": {
+          "compute_cap": 0.4458,
+          "ram_cap": 0.6132,
+          "battery": 0.9066,
+          "security_posture": 0.4166,
+          "compromise": 0.0,
+          "mobility": 0.1517
+        },
+        "weights": {
+          "compute": 0.2576,
+          "energy": 0.3803,
+          "security": 0.3621
+        },
+        "q_min": 0.1397,
+        "s_min": 0.1306,
+        "_market": {
+          "round": 1,
+          "total_rounds": 60,
+          "nodes": [
+            {
+              "node_id": "node-001",
+              "team": "bot-naive-max",
+              "features": {
+                "compute_cap": 0.4458,
+                "ram_cap": 0.6132,
+                "battery": 0.9066,
+                "security_posture": 0.4166,
+                "compromise": 0.0,
+                "mobility": 0.1517
+              },
+              "weights": {
+                "compute": 0.2576,
+                "energy": 0.3803,
+                "security": 0.3621
+              },
+              "q_min": 0.1397,
+              "s_min": 0.1306,
+              "active": true,
+              "ejected": false,
+              "is_baseline": true
+            },
+            {
+              "node_id": "node-002",
+              "team": "bot-even-split",
+              "features": {
+                "compute_cap": 0.4458,
+                "ram_cap": 0.6132,
+                "battery": 0.9066,
+                "security_posture": 0.4166,
+                "compromise": 0.0,
+                "mobility": 0.1517
+              },
+              "weights": {
+                "compute": 0.2576,
+                "energy": 0.3803,
+                "security": 0.3621
+              },
+              "q_min": 0.1397,
+              "s_min": 0.1306,
+              "active": true,
+              "ejected": false,
+              "is_baseline": true
+            },
+            {
+              "node_id": "node-003",
+              "team": "bot-proportional",
+              "features": {
+                "compute_cap": 0.4458,
+                "ram_cap": 0.6132,
+                "battery": 0.9066,
+                "security_posture": 0.4166,
+                "compromise": 0.0,
+                "mobility": 0.1517
+              },
+              "weights": {
+                "compute": 0.2576,
+                "energy": 0.3803,
+                "security": 0.3621
+              },
+              "q_min": 0.1397,
+              "s_min": 0.1306,
+              "active": true,
+              "ejected": false,
+              "is_baseline": true
+            }
+          ]
+        }
+      },
+      "history": []
+    },
+    "expected_bid": {
+      "compute": 0.30929724887338206,
+      "energy": 0.07924924,
+      "security": 0.4205425111266179
+    }
+  },
+  {
+    "seed": 20033,
+    "round": 10,
+    "inputs": {
+      "budget": 0.831534,
+      "prices": {
+        "compute": 0.561911,
+        "energy": 0.470858,
+        "security": 0.668942
+      },
+      "capacities": {
+        "compute": 0.7797,
+        "energy": 1.0283,
+        "security": 0.9894
+      },
+      "profile": {
+        "features": {
+          "compute_cap": 0.4458,
+          "ram_cap": 0.6132,
+          "battery": 0.4722,
+          "security_posture": 0.4166,
+          "compromise": 0.0,
+          "mobility": 0.1517
+        },
+        "weights": {
+          "compute": 0.2576,
+          "energy": 0.3803,
+          "security": 0.3621
+        },
+        "q_min": 0.1397,
+        "s_min": 0.1306,
+        "_market": {
+          "round": 10,
+          "total_rounds": 60,
+          "nodes": [
+            {
+              "node_id": "node-001",
+              "team": "bot-naive-max",
+              "features": {
+                "compute_cap": 0.4458,
+                "ram_cap": 0.6132,
+                "battery": 0.2223,
+                "security_posture": 0.4166,
+                "compromise": 0.0,
+                "mobility": 0.1517
+              },
+              "weights": {
+                "compute": 0.2576,
+                "energy": 0.3803,
+                "security": 0.3621
+              },
+              "q_min": 0.1397,
+              "s_min": 0.1306,
+              "active": true,
+              "ejected": false,
+              "is_baseline": true
+            },
+            {
+              "node_id": "node-002",
+              "team": "bot-even-split",
+              "features": {
+                "compute_cap": 0.4458,
+                "ram_cap": 0.6132,
+                "battery": 0.0,
+                "security_posture": 0.4166,
+                "compromise": 0.0,
+                "mobility": 0.1517
+              },
+              "weights": {
+                "compute": 0.2576,
+                "energy": 0.3803,
+                "security": 0.3621
+              },
+              "q_min": 0.1397,
+              "s_min": 0.1306,
+              "active": true,
+              "ejected": false,
+              "is_baseline": true
+            },
+            {
+              "node_id": "node-003",
+              "team": "bot-proportional",
+              "features": {
+                "compute_cap": 0.4458,
+                "ram_cap": 0.6132,
+                "battery": 0.22,
+                "security_posture": 0.4166,
+                "compromise": 0.0,
+                "mobility": 0.1517
+              },
+              "weights": {
+                "compute": 0.2576,
+                "energy": 0.3803,
+                "security": 0.3621
+              },
+              "q_min": 0.1397,
+              "s_min": 0.1306,
+              "active": true,
+              "ejected": false,
+              "is_baseline": true
+            }
+          ]
+        }
+      },
+      "history": [
+        {
+          "round": 1,
+          "allocation": {
+            "compute": 0.24431,
+            "energy": 0.085,
+            "security": 0.254824
+          },
+          "bid": {
+            "compute": 0.309297,
+            "energy": 0.079249,
+            "security": 0.420543
+          },
+          "spend": 0.809089,
+          "prices": {
+            "compute": 1.0,
+            "energy": 1.0,
+            "security": 1.0
+          },
+          "capacities": {
+            "compute": 0.8123,
+            "energy": 1.0325,
+            "security": 0.7546
+          },
+          "utility_raw": 0.177232,
+          "utility": 0.177232,
+          "floor_violations": [],
+          "battery_drawn": 0.033368,
+          "battery": 0.8732,
+          "admissible_next_round": true,
+          "round_score": 0.177232,
+          "cumulative_score": 0.177232,
+          "participated": true,
+          "swarm": {
+            "lsw": -6.218367,
+            "participants": 4
+          }
+        },
+        {
+          "round": 2,
+          "allocation": {
+            "compute": 0.404052,
+            "energy": 0.085,
+            "security": 0.221962
+          },
+          "bid": {
+            "compute": 0.355297,
+            "energy": 0.084487,
+            "security": 0.395685
+          },
+          "spend": 0.835469,
+          "prices": {
+            "compute": 1.266004,
+            "energy": 0.932344,
+            "security": 1.650326
+          },
+          "capacities": {
+            "compute": 1.1284,
+            "energy": 1.095,
+            "security": 0.7075
+          },
+          "utility_raw": 0.198216,
+          "utility": 0.198216,
+          "floor_violations": [],
+          "battery_drawn": 0.033368,
+          "battery": 0.8398,
+          "admissible_next_round": true,
+          "round_score": 0.198216,
+          "cumulative_score": 0.375449,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.885458,
+            "participants": 4
+          }
+        },
+        {
+          "round": 3,
+          "allocation": {
+            "compute": 0.171414,
+            "energy": 0.125,
+            "security": 0.439892
+          },
+          "bid": {
+            "compute": 0.252195,
+            "energy": 0.108735,
+            "security": 0.460735
+          },
+          "spend": 0.821664,
+          "prices": {
+            "compute": 0.879334,
+            "energy": 0.993969,
+            "security": 1.782671
+          },
+          "capacities": {
+            "compute": 0.7111,
+            "energy": 1.1967,
+            "security": 1.1452
+          },
+          "utility_raw": 0.23162,
+          "utility": 0.23162,
+          "floor_violations": [],
+          "battery_drawn": 0.047189,
+          "battery": 0.7926,
+          "admissible_next_round": true,
+          "round_score": 0.23162,
+          "cumulative_score": 0.607068,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.500015,
+            "participants": 4
+          }
+        },
+        {
+          "round": 4,
+          "allocation": {
+            "compute": 0.222977,
+            "energy": 0.055,
+            "security": 0.418625
+          },
+          "bid": {
+            "compute": 0.350132,
+            "energy": 0.065037,
+            "security": 0.600689
+          },
+          "spend": 1.015859,
+          "prices": {
+            "compute": 1.471257,
+            "energy": 0.869879,
+            "security": 1.047381
+          },
+          "capacities": {
+            "compute": 0.7797,
+            "energy": 1.0051,
+            "security": 1.1503
+          },
+          "utility_raw": 0.198124,
+          "utility": 0.198124,
+          "floor_violations": [],
+          "battery_drawn": 0.023003,
+          "battery": 0.7696,
+          "admissible_next_round": true,
+          "round_score": 0.198124,
+          "cumulative_score": 0.805193,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.736342,
+            "participants": 4
+          }
+        },
+        {
+          "round": 5,
+          "allocation": {
+            "compute": 0.385828,
+            "energy": 0.085,
+            "security": 0.36583
+          },
+          "bid": {
+            "compute": 0.384663,
+            "energy": 0.123769,
+            "security": 0.529109
+          },
+          "spend": 1.037541,
+          "prices": {
+            "compute": 1.57026,
+            "energy": 1.182497,
+            "security": 1.43491
+          },
+          "capacities": {
+            "compute": 1.2007,
+            "energy": 0.8857,
+            "security": 1.1501
+          },
+          "utility_raw": 0.239998,
+          "utility": 0.239998,
+          "floor_violations": [],
+          "battery_drawn": 0.033368,
+          "battery": 0.7362,
+          "admissible_next_round": true,
+          "round_score": 0.239998,
+          "cumulative_score": 1.045191,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.411727,
+            "participants": 4
+          }
+        },
+        {
+          "round": 6,
+          "allocation": {
+            "compute": 0.300857,
+            "energy": 0.085,
+            "security": 0.301369
+          },
+          "bid": {
+            "compute": 0.461246,
+            "energy": 0.128519,
+            "security": 0.624416
+          },
+          "spend": 1.214182,
+          "prices": {
+            "compute": 0.996981,
+            "energy": 1.456104,
+            "security": 1.446325
+          },
+          "capacities": {
+            "compute": 0.9803,
+            "energy": 0.9769,
+            "security": 0.9058
+          },
+          "utility_raw": 0.203358,
+          "utility": 0.203358,
+          "floor_violations": [],
+          "battery_drawn": 0.033368,
+          "battery": 0.7028,
+          "admissible_next_round": true,
+          "round_score": 0.203358,
+          "cumulative_score": 1.248549,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.847166,
+            "participants": 4
+          }
+        },
+        {
+          "round": 7,
+          "allocation": {
+            "compute": 0.153204,
+            "energy": 0.192462,
+            "security": 0.386951
+          },
+          "bid": {
+            "compute": 0.207097,
+            "energy": 0.167269,
+            "security": 0.381783
+          },
+          "spend": 0.756149,
+          "prices": {
+            "compute": 1.533108,
+            "energy": 1.51199,
+            "security": 2.071935
+          },
+          "capacities": {
+            "compute": 0.7117,
+            "energy": 1.1268,
+            "security": 1.0979
+          },
+          "utility_raw": 0.242963,
+          "utility": 0.242963,
+          "floor_violations": [],
+          "battery_drawn": 0.070498,
+          "battery": 0.6323,
+          "admissible_next_round": true,
+          "round_score": 0.242963,
+          "cumulative_score": 1.491512,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.594428,
+            "participants": 4
+          }
+        },
+        {
+          "round": 8,
+          "allocation": {
+            "compute": 0.27429,
+            "energy": 0.085,
+            "security": 0.293022
+          },
+          "bid": {
+            "compute": 0.288434,
+            "energy": 0.088423,
+            "security": 0.395122
+          },
+          "spend": 0.771979,
+          "prices": {
+            "compute": 1.351775,
+            "energy": 0.869099,
+            "security": 0.986644
+          },
+          "capacities": {
+            "compute": 0.92,
+            "energy": 0.9152,
+            "security": 0.8665
+          },
+          "utility_raw": 0.195185,
+          "utility": 0.195185,
+          "floor_violations": [],
+          "battery_drawn": 0.033368,
+          "battery": 0.5989,
+          "admissible_next_round": true,
+          "round_score": 0.195185,
+          "cumulative_score": 1.686698,
+          "participated": true,
+          "swarm": {
+            "lsw": -6.069456,
+            "participants": 4
+          }
+        }
+      ]
+    },
+    "expected_bid": {
+      "compute": 0.3317149741739932,
+      "energy": 0.00504969,
+      "security": 0.4947693358260068
+    }
+  },
+  {
+    "seed": 20033,
+    "round": 30,
+    "inputs": {
+      "budget": 1.052673,
+      "prices": {
+        "compute": 1.113213,
+        "energy": 1.567388,
+        "security": 1.977226
+      },
+      "capacities": {
+        "compute": 0.7782,
+        "energy": 0.761,
+        "security": 0.7881
+      },
+      "profile": {
+        "features": {
+          "compute_cap": 0.4458,
+          "ram_cap": 0.6132,
+          "battery": 0.1296,
+          "security_posture": 0.4166,
+          "compromise": 0.0,
+          "mobility": 0.1517
+        },
+        "weights": {
+          "compute": 0.2576,
+          "energy": 0.3803,
+          "security": 0.3621
+        },
+        "q_min": 0.1397,
+        "s_min": 0.1306,
+        "_market": {
+          "round": 30,
+          "total_rounds": 60,
+          "nodes": [
+            {
+              "node_id": "node-001",
+              "team": "bot-naive-max",
+              "features": {
+                "compute_cap": 0.4458,
+                "ram_cap": 0.6132,
+                "battery": 0.0,
+                "security_posture": 0.4166,
+                "compromise": 0.0,
+                "mobility": 0.1517
+              },
+              "weights": {
+                "compute": 0.2576,
+                "energy": 0.3803,
+                "security": 0.3621
+              },
+              "q_min": 0.1397,
+              "s_min": 0.1306,
+              "active": true,
+              "ejected": false,
+              "is_baseline": true
+            },
+            {
+              "node_id": "node-002",
+              "team": "bot-even-split",
+              "features": {
+                "compute_cap": 0.4458,
+                "ram_cap": 0.6132,
+                "battery": 0.0418,
+                "security_posture": 0.4166,
+                "compromise": 0.0,
+                "mobility": 0.1517
+              },
+              "weights": {
+                "compute": 0.2576,
+                "energy": 0.3803,
+                "security": 0.3621
+              },
+              "q_min": 0.1397,
+              "s_min": 0.1306,
+              "active": true,
+              "ejected": false,
+              "is_baseline": true
+            },
+            {
+              "node_id": "node-003",
+              "team": "bot-proportional",
+              "features": {
+                "compute_cap": 0.4458,
+                "ram_cap": 0.6132,
+                "battery": 0.0229,
+                "security_posture": 0.4166,
+                "compromise": 0.0,
+                "mobility": 0.1517
+              },
+              "weights": {
+                "compute": 0.2576,
+                "energy": 0.3803,
+                "security": 0.3621
+              },
+              "q_min": 0.1397,
+              "s_min": 0.1306,
+              "active": true,
+              "ejected": false,
+              "is_baseline": true
+            }
+          ]
+        }
+      },
+      "history": [
+        {
+          "round": 1,
+          "allocation": {
+            "compute": 0.24431,
+            "energy": 0.085,
+            "security": 0.254824
+          },
+          "bid": {
+            "compute": 0.309297,
+            "energy": 0.079249,
+            "security": 0.420543
+          },
+          "spend": 0.809089,
+          "prices": {
+            "compute": 1.0,
+            "energy": 1.0,
+            "security": 1.0
+          },
+          "capacities": {
+            "compute": 0.8123,
+            "energy": 1.0325,
+            "security": 0.7546
+          },
+          "utility_raw": 0.177232,
+          "utility": 0.177232,
+          "floor_violations": [],
+          "battery_drawn": 0.033368,
+          "battery": 0.8732,
+          "admissible_next_round": true,
+          "round_score": 0.177232,
+          "cumulative_score": 0.177232,
+          "participated": true,
+          "swarm": {
+            "lsw": -6.218367,
+            "participants": 4
+          }
+        },
+        {
+          "round": 2,
+          "allocation": {
+            "compute": 0.404052,
+            "energy": 0.085,
+            "security": 0.221962
+          },
+          "bid": {
+            "compute": 0.355297,
+            "energy": 0.084487,
+            "security": 0.395685
+          },
+          "spend": 0.835469,
+          "prices": {
+            "compute": 1.266004,
+            "energy": 0.932344,
+            "security": 1.650326
+          },
+          "capacities": {
+            "compute": 1.1284,
+            "energy": 1.095,
+            "security": 0.7075
+          },
+          "utility_raw": 0.198216,
+          "utility": 0.198216,
+          "floor_violations": [],
+          "battery_drawn": 0.033368,
+          "battery": 0.8398,
+          "admissible_next_round": true,
+          "round_score": 0.198216,
+          "cumulative_score": 0.375449,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.885458,
+            "participants": 4
+          }
+        },
+        {
+          "round": 3,
+          "allocation": {
+            "compute": 0.171414,
+            "energy": 0.125,
+            "security": 0.439892
+          },
+          "bid": {
+            "compute": 0.252195,
+            "energy": 0.108735,
+            "security": 0.460735
+          },
+          "spend": 0.821664,
+          "prices": {
+            "compute": 0.879334,
+            "energy": 0.993969,
+            "security": 1.782671
+          },
+          "capacities": {
+            "compute": 0.7111,
+            "energy": 1.1967,
+            "security": 1.1452
+          },
+          "utility_raw": 0.23162,
+          "utility": 0.23162,
+          "floor_violations": [],
+          "battery_drawn": 0.047189,
+          "battery": 0.7926,
+          "admissible_next_round": true,
+          "round_score": 0.23162,
+          "cumulative_score": 0.607068,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.500015,
+            "participants": 4
+          }
+        },
+        {
+          "round": 4,
+          "allocation": {
+            "compute": 0.222977,
+            "energy": 0.055,
+            "security": 0.418625
+          },
+          "bid": {
+            "compute": 0.350132,
+            "energy": 0.065037,
+            "security": 0.600689
+          },
+          "spend": 1.015859,
+          "prices": {
+            "compute": 1.471257,
+            "energy": 0.869879,
+            "security": 1.047381
+          },
+          "capacities": {
+            "compute": 0.7797,
+            "energy": 1.0051,
+            "security": 1.1503
+          },
+          "utility_raw": 0.198124,
+          "utility": 0.198124,
+          "floor_violations": [],
+          "battery_drawn": 0.023003,
+          "battery": 0.7696,
+          "admissible_next_round": true,
+          "round_score": 0.198124,
+          "cumulative_score": 0.805193,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.736342,
+            "participants": 4
+          }
+        },
+        {
+          "round": 5,
+          "allocation": {
+            "compute": 0.385828,
+            "energy": 0.085,
+            "security": 0.36583
+          },
+          "bid": {
+            "compute": 0.384663,
+            "energy": 0.123769,
+            "security": 0.529109
+          },
+          "spend": 1.037541,
+          "prices": {
+            "compute": 1.57026,
+            "energy": 1.182497,
+            "security": 1.43491
+          },
+          "capacities": {
+            "compute": 1.2007,
+            "energy": 0.8857,
+            "security": 1.1501
+          },
+          "utility_raw": 0.239998,
+          "utility": 0.239998,
+          "floor_violations": [],
+          "battery_drawn": 0.033368,
+          "battery": 0.7362,
+          "admissible_next_round": true,
+          "round_score": 0.239998,
+          "cumulative_score": 1.045191,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.411727,
+            "participants": 4
+          }
+        },
+        {
+          "round": 6,
+          "allocation": {
+            "compute": 0.300857,
+            "energy": 0.085,
+            "security": 0.301369
+          },
+          "bid": {
+            "compute": 0.461246,
+            "energy": 0.128519,
+            "security": 0.624416
+          },
+          "spend": 1.214182,
+          "prices": {
+            "compute": 0.996981,
+            "energy": 1.456104,
+            "security": 1.446325
+          },
+          "capacities": {
+            "compute": 0.9803,
+            "energy": 0.9769,
+            "security": 0.9058
+          },
+          "utility_raw": 0.203358,
+          "utility": 0.203358,
+          "floor_violations": [],
+          "battery_drawn": 0.033368,
+          "battery": 0.7028,
+          "admissible_next_round": true,
+          "round_score": 0.203358,
+          "cumulative_score": 1.248549,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.847166,
+            "participants": 4
+          }
+        },
+        {
+          "round": 7,
+          "allocation": {
+            "compute": 0.153204,
+            "energy": 0.192462,
+            "security": 0.386951
+          },
+          "bid": {
+            "compute": 0.207097,
+            "energy": 0.167269,
+            "security": 0.381783
+          },
+          "spend": 0.756149,
+          "prices": {
+            "compute": 1.533108,
+            "energy": 1.51199,
+            "security": 2.071935
+          },
+          "capacities": {
+            "compute": 0.7117,
+            "energy": 1.1268,
+            "security": 1.0979
+          },
+          "utility_raw": 0.242963,
+          "utility": 0.242963,
+          "floor_violations": [],
+          "battery_drawn": 0.070498,
+          "battery": 0.6323,
+          "admissible_next_round": true,
+          "round_score": 0.242963,
+          "cumulative_score": 1.491512,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.594428,
+            "participants": 4
+          }
+        },
+        {
+          "round": 8,
+          "allocation": {
+            "compute": 0.27429,
+            "energy": 0.085,
+            "security": 0.293022
+          },
+          "bid": {
+            "compute": 0.288434,
+            "energy": 0.088423,
+            "security": 0.395122
+          },
+          "spend": 0.771979,
+          "prices": {
+            "compute": 1.351775,
+            "energy": 0.869099,
+            "security": 0.986644
+          },
+          "capacities": {
+            "compute": 0.92,
+            "energy": 0.9152,
+            "security": 0.8665
+          },
+          "utility_raw": 0.195185,
+          "utility": 0.195185,
+          "floor_violations": [],
+          "battery_drawn": 0.033368,
+          "battery": 0.5989,
+          "admissible_next_round": true,
+          "round_score": 0.195185,
+          "cumulative_score": 1.686698,
+          "participated": true,
+          "swarm": {
+            "lsw": -6.069456,
+            "participants": 4
+          }
+        },
+        {
+          "round": 9,
+          "allocation": {
+            "compute": 0.464196,
+            "energy": 0.355266,
+            "security": 0.498053
+          },
+          "bid": {
+            "compute": 0.260836,
+            "energy": 0.167279,
+            "security": 0.333168
+          },
+          "spend": 0.761284,
+          "prices": {
+            "compute": 1.051566,
+            "energy": 1.040267,
+            "security": 1.348439
+          },
+          "capacities": {
+            "compute": 0.9158,
+            "energy": 0.8942,
+            "security": 0.8774
+          },
+          "utility_raw": 0.432604,
+          "utility": 0.432604,
+          "floor_violations": [],
+          "battery_drawn": 0.126748,
+          "battery": 0.4722,
+          "admissible_next_round": true,
+          "round_score": 0.432604,
+          "cumulative_score": 2.119302,
+          "participated": true,
+          "swarm": {
+            "lsw": -1.623071,
+            "participants": 2
+          }
+        },
+        {
+          "round": 10,
+          "allocation": {
+            "compute": 0.315484,
+            "energy": 0.007787,
+            "security": 0.485638
+          },
+          "bid": {
+            "compute": 0.331715,
+            "energy": 0.00505,
+            "security": 0.494769
+          },
+          "spend": 0.831534,
+          "prices": {
+            "compute": 0.561911,
+            "energy": 0.470858,
+            "security": 0.668942
+          },
+          "capacities": {
+            "compute": 0.7797,
+            "energy": 1.0283,
+            "security": 0.9894
+          },
+          "utility_raw": 0.185406,
+          "utility": 0.185406,
+          "floor_violations": [],
+          "battery_drawn": 0.006691,
+          "battery": 0.4655,
+          "admissible_next_round": true,
+          "round_score": 0.185406,
+          "cumulative_score": 2.304708,
+          "participated": true,
+          "swarm": {
+            "lsw": -3.888331,
+            "participants": 3
+          }
+        },
+        {
+          "round": 11,
+          "allocation": {
+            "compute": 0.646536,
+            "energy": 0.25,
+            "security": 0.759582
+          },
+          "bid": {
+            "compute": 0.421638,
+            "energy": 0.091315,
+            "security": 0.550503
+          },
+          "spend": 1.063456,
+          "prices": {
+            "compute": 1.051447,
+            "energy": 0.648436,
+            "security": 1.018802
+          },
+          "capacities": {
+            "compute": 1.1901,
+            "energy": 1.2205,
+            "security": 1.2487
+          },
+          "utility_raw": 0.508175,
+          "utility": 0.508175,
+          "floor_violations": [],
+          "battery_drawn": 0.090378,
+          "battery": 0.3751,
+          "admissible_next_round": true,
+          "round_score": 0.508175,
+          "cumulative_score": 2.812884,
+          "participated": true,
+          "swarm": {
+            "lsw": -1.079178,
+            "participants": 2
+          }
+        },
+        {
+          "round": 12,
+          "allocation": {
+            "compute": 0.238977,
+            "energy": 0.36,
+            "security": 0.136673
+          },
+          "bid": {
+            "compute": 0.148497,
+            "energy": 0.930228,
+            "security": 0.163026
+          },
+          "spend": 1.241751,
+          "prices": {
+            "compute": 0.65215,
+            "energy": 0.365261,
+            "security": 0.724744
+          },
+          "capacities": {
+            "compute": 1.1639,
+            "energy": 0.8098,
+            "security": 0.7625
+          },
+          "utility_raw": 0.238119,
+          "utility": 0.238119,
+          "floor_violations": [],
+          "battery_drawn": 0.128384,
+          "battery": 0.2467,
+          "admissible_next_round": true,
+          "round_score": 0.238119,
+          "cumulative_score": 3.051003,
+          "participated": true,
+          "swarm": {
+            "lsw": -3.784674,
+            "participants": 3
+          }
+        },
+        {
+          "round": 13,
+          "allocation": {
+            "compute": 0.252083,
+            "energy": 0.125,
+            "security": 0.325867
+          },
+          "bid": {
+            "compute": 0.391331,
+            "energy": 0.174352,
+            "security": 0.581487
+          },
+          "spend": 1.14717,
+          "prices": {
+            "compute": 0.621386,
+            "energy": 2.583967,
+            "security": 1.19282
+          },
+          "capacities": {
+            "compute": 0.9765,
+            "energy": 0.8597,
+            "security": 1.05
+          },
+          "utility_raw": 0.221366,
+          "utility": 0.221366,
+          "floor_violations": [],
+          "battery_drawn": 0.047189,
+          "battery": 0.1995,
+          "admissible_next_round": true,
+          "round_score": 0.221366,
+          "cumulative_score": 3.272369,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.792152,
+            "participants": 4
+          }
+        },
+        {
+          "round": 14,
+          "allocation": {
+            "compute": 0.351313,
+            "energy": 0.085,
+            "security": 0.351097
+          },
+          "bid": {
+            "compute": 0.35307,
+            "energy": 0.09294,
+            "security": 0.485596
+          },
+          "spend": 0.931605,
+          "prices": {
+            "compute": 1.55239,
+            "energy": 1.394815,
+            "security": 1.784427
+          },
+          "capacities": {
+            "compute": 1.0816,
+            "energy": 1.1041,
+            "security": 1.0355
+          },
+          "utility_raw": 0.228595,
+          "utility": 0.228595,
+          "floor_violations": [],
+          "battery_drawn": 0.033368,
+          "battery": 0.1661,
+          "admissible_next_round": true,
+          "round_score": 0.228595,
+          "cumulative_score": 3.500964,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.396398,
+            "participants": 4
+          }
+        },
+        {
+          "round": 15,
+          "allocation": {
+            "compute": 1.1752,
+            "energy": 1.1576,
+            "security": 1.0381
+          },
+          "bid": {
+            "compute": 0.850235,
+            "energy": 9e-06,
+            "security": 0.000624
+          },
+          "spend": 0.850867,
+          "prices": {
+            "compute": 1.005,
+            "energy": 1.093406,
+            "security": 1.383083
+          },
+          "capacities": {
+            "compute": 1.1752,
+            "energy": 1.1576,
+            "security": 1.0381
+          },
+          "utility_raw": 1.118012,
+          "utility": 1.118012,
+          "floor_violations": [],
+          "battery_drawn": 0.403962,
+          "battery": 0.0,
+          "admissible_next_round": false,
+          "round_score": 1.118012,
+          "cumulative_score": 4.618976,
+          "participated": true,
+          "swarm": {
+            "lsw": 0.111552,
+            "participants": 1
+          }
+        },
+        {
+          "round": 17,
+          "allocation": {
+            "compute": 0.259329,
+            "energy": 8e-06,
+            "security": 0.349262
+          },
+          "bid": {
+            "compute": 0.309078,
+            "energy": 8e-06,
+            "security": 0.459906
+          },
+          "spend": 0.768992,
+          "prices": {
+            "compute": 0.612265,
+            "energy": 1.21022,
+            "security": 1.249352
+          },
+          "capacities": {
+            "compute": 0.8475,
+            "energy": 0.8494,
+            "security": 0.9522
+          },
+          "utility_raw": 0.119893,
+          "utility": 0.119893,
+          "floor_violations": [],
+          "battery_drawn": 0.004003,
+          "battery": 0.216,
+          "admissible_next_round": true,
+          "round_score": 0.119893,
+          "cumulative_score": 4.738868,
+          "participated": true,
+          "swarm": {
+            "lsw": -6.544289,
+            "participants": 4
+          }
+        },
+        {
+          "round": 18,
+          "allocation": {
+            "compute": 1.2731,
+            "energy": 0.7097,
+            "security": 0.9059
+          },
+          "bid": {
+            "compute": 0.87432,
+            "energy": 0.062282,
+            "security": 0.000641
+          },
+          "spend": 0.937244,
+          "prices": {
+            "compute": 1.191836,
+            "energy": 0.956012,
+            "security": 1.316793
+          },
+          "capacities": {
+            "compute": 1.2731,
+            "energy": 0.7097,
+            "security": 0.9059
+          },
+          "utility_raw": 0.913316,
+          "utility": 0.913316,
+          "floor_violations": [],
+          "battery_drawn": 0.249208,
+          "battery": 0.0,
+          "admissible_next_round": false,
+          "round_score": 0.913316,
+          "cumulative_score": 5.652184,
+          "participated": true,
+          "swarm": {
+            "lsw": -0.090673,
+            "participants": 1
+          }
+        },
+        {
+          "round": 20,
+          "allocation": {
+            "compute": 0.245228,
+            "energy": 1e-05,
+            "security": 0.287355
+          },
+          "bid": {
+            "compute": 0.340195,
+            "energy": 8e-06,
+            "security": 0.478945
+          },
+          "spend": 0.819148,
+          "prices": {
+            "compute": 0.645294,
+            "energy": 0.705386,
+            "security": 0.837979
+          },
+          "capacities": {
+            "compute": 0.773,
+            "energy": 1.1449,
+            "security": 0.78
+          },
+          "utility_raw": 0.104261,
+          "utility": 0.104261,
+          "floor_violations": [],
+          "battery_drawn": 0.004004,
+          "battery": 0.216,
+          "admissible_next_round": true,
+          "round_score": 0.104261,
+          "cumulative_score": 5.756446,
+          "participated": true,
+          "swarm": {
+            "lsw": -6.549113,
+            "participants": 4
+          }
+        },
+        {
+          "round": 21,
+          "allocation": {
+            "compute": 1.2903,
+            "energy": 1.129,
+            "security": 0.8738
+          },
+          "bid": {
+            "compute": 1.099745,
+            "energy": 1.1e-05,
+            "security": 0.002115
+          },
+          "spend": 1.101871,
+          "prices": {
+            "compute": 1.387262,
+            "energy": 0.789752,
+            "security": 1.666733
+          },
+          "capacities": {
+            "compute": 1.2903,
+            "energy": 1.129,
+            "security": 0.8738
+          },
+          "utility_raw": 1.071594,
+          "utility": 1.071594,
+          "floor_violations": [],
+          "battery_drawn": 0.394081,
+          "battery": 0.0,
+          "admissible_next_round": false,
+          "round_score": 1.071594,
+          "cumulative_score": 6.828039,
+          "participated": true,
+          "swarm": {
+            "lsw": 0.069147,
+            "participants": 1
+          }
+        },
+        {
+          "round": 23,
+          "allocation": {
+            "compute": 0.262776,
+            "energy": 8e-06,
+            "security": 0.315515
+          },
+          "bid": {
+            "compute": 0.356405,
+            "energy": 9e-06,
+            "security": 0.512474
+          },
+          "spend": 0.868888,
+          "prices": {
+            "compute": 0.730996,
+            "energy": 1.105022,
+            "security": 1.052906
+          },
+          "capacities": {
+            "compute": 0.8284,
+            "energy": 0.8871,
+            "security": 0.8704
+          },
+          "utility_raw": 0.113255,
+          "utility": 0.113255,
+          "floor_violations": [],
+          "battery_drawn": 0.004003,
+          "battery": 0.216,
+          "admissible_next_round": true,
+          "round_score": 0.113255,
+          "cumulative_score": 6.941295,
+          "participated": true,
+          "swarm": {
+            "lsw": -6.655882,
+            "participants": 4
+          }
+        },
+        {
+          "round": 24,
+          "allocation": {
+            "compute": 1.2571,
+            "energy": 1.2745,
+            "security": 0.7468
+          },
+          "bid": {
+            "compute": 1.056543,
+            "energy": 0.075263,
+            "security": 0.000775
+          },
+          "spend": 1.132581,
+          "prices": {
+            "compute": 1.356311,
+            "energy": 1.057647,
+            "security": 1.624247
+          },
+          "capacities": {
+            "compute": 1.2571,
+            "energy": 1.2745,
+            "security": 0.7468
+          },
+          "utility_raw": 1.063116,
+          "utility": 1.063116,
+          "floor_violations": [],
+          "battery_drawn": 0.444352,
+          "battery": 0.0,
+          "admissible_next_round": false,
+          "round_score": 1.063116,
+          "cumulative_score": 8.004411,
+          "participated": true,
+          "swarm": {
+            "lsw": 0.061205,
+            "participants": 1
+          }
+        },
+        {
+          "round": 26,
+          "allocation": {
+            "compute": 0.176965,
+            "energy": 0.125,
+            "security": 0.442937
+          },
+          "bid": {
+            "compute": 0.242319,
+            "energy": 0.09847,
+            "security": 0.458022
+          },
+          "spend": 0.798811,
+          "prices": {
+            "compute": 0.794007,
+            "energy": 0.995807,
+            "security": 0.804925
+          },
+          "capacities": {
+            "compute": 0.7368,
+            "energy": 1.1351,
+            "security": 1.2496
+          },
+          "utility_raw": 0.234074,
+          "utility": 0.234074,
+          "floor_violations": [],
+          "battery_drawn": 0.047189,
+          "battery": 0.1728,
+          "admissible_next_round": true,
+          "round_score": 0.234074,
+          "cumulative_score": 8.238485,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.387936,
+            "participants": 4
+          }
+        },
+        {
+          "round": 27,
+          "allocation": {
+            "compute": 0.8359,
+            "energy": 0.9249,
+            "security": 0.7382
+          },
+          "bid": {
+            "compute": 0.812266,
+            "energy": 8e-06,
+            "security": 0.000596
+          },
+          "spend": 0.81287,
+          "prices": {
+            "compute": 1.369303,
+            "energy": 0.787757,
+            "security": 1.034058
+          },
+          "capacities": {
+            "compute": 0.8359,
+            "energy": 0.9249,
+            "security": 0.7382
+          },
+          "utility_raw": 0.832418,
+          "utility": 0.832418,
+          "floor_violations": [],
+          "battery_drawn": 0.323562,
+          "battery": 0.0,
+          "admissible_next_round": false,
+          "round_score": 0.832418,
+          "cumulative_score": 9.070903,
+          "participated": true,
+          "swarm": {
+            "lsw": -0.18342,
+            "participants": 1
+          }
+        }
+      ]
+    },
+    "expected_bid": {
+      "compute": 1.051890723735921,
+      "energy": 1.053e-05,
+      "security": 0.000771746264079054
+    }
+  },
+  {
+    "seed": 20033,
+    "round": 59,
+    "inputs": {
+      "budget": 1.152192,
+      "prices": {
+        "compute": 0.532683,
+        "energy": 0.890368,
+        "security": 1.149697
+      },
+      "capacities": {
+        "compute": 0.8306,
+        "energy": 0.8657,
+        "security": 1.2528
+      },
+      "profile": {
+        "features": {
+          "compute_cap": 0.4458,
+          "ram_cap": 0.6132,
+          "battery": 0.22,
+          "security_posture": 0.4166,
+          "compromise": 0.0,
+          "mobility": 0.1517
+        },
+        "weights": {
+          "compute": 0.2576,
+          "energy": 0.3803,
+          "security": 0.3621
+        },
+        "q_min": 0.1397,
+        "s_min": 0.1306,
+        "_market": {
+          "round": 59,
+          "total_rounds": 60,
+          "nodes": [
+            {
+              "node_id": "node-001",
+              "team": "bot-naive-max",
+              "features": {
+                "compute_cap": 0.4458,
+                "ram_cap": 0.6132,
+                "battery": 0.0849,
+                "security_posture": 0.4166,
+                "compromise": 0.0,
+                "mobility": 0.1517
+              },
+              "weights": {
+                "compute": 0.2576,
+                "energy": 0.3803,
+                "security": 0.3621
+              },
+              "q_min": 0.1397,
+              "s_min": 0.1306,
+              "active": true,
+              "ejected": false,
+              "is_baseline": true
+            },
+            {
+              "node_id": "node-002",
+              "team": "bot-even-split",
+              "features": {
+                "compute_cap": 0.4458,
+                "ram_cap": 0.6132,
+                "battery": 0.1166,
+                "security_posture": 0.4166,
+                "compromise": 0.0,
+                "mobility": 0.1517
+              },
+              "weights": {
+                "compute": 0.2576,
+                "energy": 0.3803,
+                "security": 0.3621
+              },
+              "q_min": 0.1397,
+              "s_min": 0.1306,
+              "active": true,
+              "ejected": false,
+              "is_baseline": true
+            },
+            {
+              "node_id": "node-003",
+              "team": "bot-proportional",
+              "features": {
+                "compute_cap": 0.4458,
+                "ram_cap": 0.6132,
+                "battery": 0.0629,
+                "security_posture": 0.4166,
+                "compromise": 0.0,
+                "mobility": 0.1517
+              },
+              "weights": {
+                "compute": 0.2576,
+                "energy": 0.3803,
+                "security": 0.3621
+              },
+              "q_min": 0.1397,
+              "s_min": 0.1306,
+              "active": true,
+              "ejected": false,
+              "is_baseline": true
+            }
+          ]
+        }
+      },
+      "history": [
+        {
+          "round": 1,
+          "allocation": {
+            "compute": 0.24431,
+            "energy": 0.085,
+            "security": 0.254824
+          },
+          "bid": {
+            "compute": 0.309297,
+            "energy": 0.079249,
+            "security": 0.420543
+          },
+          "spend": 0.809089,
+          "prices": {
+            "compute": 1.0,
+            "energy": 1.0,
+            "security": 1.0
+          },
+          "capacities": {
+            "compute": 0.8123,
+            "energy": 1.0325,
+            "security": 0.7546
+          },
+          "utility_raw": 0.177232,
+          "utility": 0.177232,
+          "floor_violations": [],
+          "battery_drawn": 0.033368,
+          "battery": 0.8732,
+          "admissible_next_round": true,
+          "round_score": 0.177232,
+          "cumulative_score": 0.177232,
+          "participated": true,
+          "swarm": {
+            "lsw": -6.218367,
+            "participants": 4
+          }
+        },
+        {
+          "round": 2,
+          "allocation": {
+            "compute": 0.404052,
+            "energy": 0.085,
+            "security": 0.221962
+          },
+          "bid": {
+            "compute": 0.355297,
+            "energy": 0.084487,
+            "security": 0.395685
+          },
+          "spend": 0.835469,
+          "prices": {
+            "compute": 1.266004,
+            "energy": 0.932344,
+            "security": 1.650326
+          },
+          "capacities": {
+            "compute": 1.1284,
+            "energy": 1.095,
+            "security": 0.7075
+          },
+          "utility_raw": 0.198216,
+          "utility": 0.198216,
+          "floor_violations": [],
+          "battery_drawn": 0.033368,
+          "battery": 0.8398,
+          "admissible_next_round": true,
+          "round_score": 0.198216,
+          "cumulative_score": 0.375449,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.885458,
+            "participants": 4
+          }
+        },
+        {
+          "round": 3,
+          "allocation": {
+            "compute": 0.171414,
+            "energy": 0.125,
+            "security": 0.439892
+          },
+          "bid": {
+            "compute": 0.252195,
+            "energy": 0.108735,
+            "security": 0.460735
+          },
+          "spend": 0.821664,
+          "prices": {
+            "compute": 0.879334,
+            "energy": 0.993969,
+            "security": 1.782671
+          },
+          "capacities": {
+            "compute": 0.7111,
+            "energy": 1.1967,
+            "security": 1.1452
+          },
+          "utility_raw": 0.23162,
+          "utility": 0.23162,
+          "floor_violations": [],
+          "battery_drawn": 0.047189,
+          "battery": 0.7926,
+          "admissible_next_round": true,
+          "round_score": 0.23162,
+          "cumulative_score": 0.607068,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.500015,
+            "participants": 4
+          }
+        },
+        {
+          "round": 4,
+          "allocation": {
+            "compute": 0.222977,
+            "energy": 0.055,
+            "security": 0.418625
+          },
+          "bid": {
+            "compute": 0.350132,
+            "energy": 0.065037,
+            "security": 0.600689
+          },
+          "spend": 1.015859,
+          "prices": {
+            "compute": 1.471257,
+            "energy": 0.869879,
+            "security": 1.047381
+          },
+          "capacities": {
+            "compute": 0.7797,
+            "energy": 1.0051,
+            "security": 1.1503
+          },
+          "utility_raw": 0.198124,
+          "utility": 0.198124,
+          "floor_violations": [],
+          "battery_drawn": 0.023003,
+          "battery": 0.7696,
+          "admissible_next_round": true,
+          "round_score": 0.198124,
+          "cumulative_score": 0.805193,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.736342,
+            "participants": 4
+          }
+        },
+        {
+          "round": 5,
+          "allocation": {
+            "compute": 0.385828,
+            "energy": 0.085,
+            "security": 0.36583
+          },
+          "bid": {
+            "compute": 0.384663,
+            "energy": 0.123769,
+            "security": 0.529109
+          },
+          "spend": 1.037541,
+          "prices": {
+            "compute": 1.57026,
+            "energy": 1.182497,
+            "security": 1.43491
+          },
+          "capacities": {
+            "compute": 1.2007,
+            "energy": 0.8857,
+            "security": 1.1501
+          },
+          "utility_raw": 0.239998,
+          "utility": 0.239998,
+          "floor_violations": [],
+          "battery_drawn": 0.033368,
+          "battery": 0.7362,
+          "admissible_next_round": true,
+          "round_score": 0.239998,
+          "cumulative_score": 1.045191,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.411727,
+            "participants": 4
+          }
+        },
+        {
+          "round": 6,
+          "allocation": {
+            "compute": 0.300857,
+            "energy": 0.085,
+            "security": 0.301369
+          },
+          "bid": {
+            "compute": 0.461246,
+            "energy": 0.128519,
+            "security": 0.624416
+          },
+          "spend": 1.214182,
+          "prices": {
+            "compute": 0.996981,
+            "energy": 1.456104,
+            "security": 1.446325
+          },
+          "capacities": {
+            "compute": 0.9803,
+            "energy": 0.9769,
+            "security": 0.9058
+          },
+          "utility_raw": 0.203358,
+          "utility": 0.203358,
+          "floor_violations": [],
+          "battery_drawn": 0.033368,
+          "battery": 0.7028,
+          "admissible_next_round": true,
+          "round_score": 0.203358,
+          "cumulative_score": 1.248549,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.847166,
+            "participants": 4
+          }
+        },
+        {
+          "round": 7,
+          "allocation": {
+            "compute": 0.153204,
+            "energy": 0.192462,
+            "security": 0.386951
+          },
+          "bid": {
+            "compute": 0.207097,
+            "energy": 0.167269,
+            "security": 0.381783
+          },
+          "spend": 0.756149,
+          "prices": {
+            "compute": 1.533108,
+            "energy": 1.51199,
+            "security": 2.071935
+          },
+          "capacities": {
+            "compute": 0.7117,
+            "energy": 1.1268,
+            "security": 1.0979
+          },
+          "utility_raw": 0.242963,
+          "utility": 0.242963,
+          "floor_violations": [],
+          "battery_drawn": 0.070498,
+          "battery": 0.6323,
+          "admissible_next_round": true,
+          "round_score": 0.242963,
+          "cumulative_score": 1.491512,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.594428,
+            "participants": 4
+          }
+        },
+        {
+          "round": 8,
+          "allocation": {
+            "compute": 0.27429,
+            "energy": 0.085,
+            "security": 0.293022
+          },
+          "bid": {
+            "compute": 0.288434,
+            "energy": 0.088423,
+            "security": 0.395122
+          },
+          "spend": 0.771979,
+          "prices": {
+            "compute": 1.351775,
+            "energy": 0.869099,
+            "security": 0.986644
+          },
+          "capacities": {
+            "compute": 0.92,
+            "energy": 0.9152,
+            "security": 0.8665
+          },
+          "utility_raw": 0.195185,
+          "utility": 0.195185,
+          "floor_violations": [],
+          "battery_drawn": 0.033368,
+          "battery": 0.5989,
+          "admissible_next_round": true,
+          "round_score": 0.195185,
+          "cumulative_score": 1.686698,
+          "participated": true,
+          "swarm": {
+            "lsw": -6.069456,
+            "participants": 4
+          }
+        },
+        {
+          "round": 9,
+          "allocation": {
+            "compute": 0.464196,
+            "energy": 0.355266,
+            "security": 0.498053
+          },
+          "bid": {
+            "compute": 0.260836,
+            "energy": 0.167279,
+            "security": 0.333168
+          },
+          "spend": 0.761284,
+          "prices": {
+            "compute": 1.051566,
+            "energy": 1.040267,
+            "security": 1.348439
+          },
+          "capacities": {
+            "compute": 0.9158,
+            "energy": 0.8942,
+            "security": 0.8774
+          },
+          "utility_raw": 0.432604,
+          "utility": 0.432604,
+          "floor_violations": [],
+          "battery_drawn": 0.126748,
+          "battery": 0.4722,
+          "admissible_next_round": true,
+          "round_score": 0.432604,
+          "cumulative_score": 2.119302,
+          "participated": true,
+          "swarm": {
+            "lsw": -1.623071,
+            "participants": 2
+          }
+        },
+        {
+          "round": 10,
+          "allocation": {
+            "compute": 0.315484,
+            "energy": 0.007787,
+            "security": 0.485638
+          },
+          "bid": {
+            "compute": 0.331715,
+            "energy": 0.00505,
+            "security": 0.494769
+          },
+          "spend": 0.831534,
+          "prices": {
+            "compute": 0.561911,
+            "energy": 0.470858,
+            "security": 0.668942
+          },
+          "capacities": {
+            "compute": 0.7797,
+            "energy": 1.0283,
+            "security": 0.9894
+          },
+          "utility_raw": 0.185406,
+          "utility": 0.185406,
+          "floor_violations": [],
+          "battery_drawn": 0.006691,
+          "battery": 0.4655,
+          "admissible_next_round": true,
+          "round_score": 0.185406,
+          "cumulative_score": 2.304708,
+          "participated": true,
+          "swarm": {
+            "lsw": -3.888331,
+            "participants": 3
+          }
+        },
+        {
+          "round": 11,
+          "allocation": {
+            "compute": 0.646536,
+            "energy": 0.25,
+            "security": 0.759582
+          },
+          "bid": {
+            "compute": 0.421638,
+            "energy": 0.091315,
+            "security": 0.550503
+          },
+          "spend": 1.063456,
+          "prices": {
+            "compute": 1.051447,
+            "energy": 0.648436,
+            "security": 1.018802
+          },
+          "capacities": {
+            "compute": 1.1901,
+            "energy": 1.2205,
+            "security": 1.2487
+          },
+          "utility_raw": 0.508175,
+          "utility": 0.508175,
+          "floor_violations": [],
+          "battery_drawn": 0.090378,
+          "battery": 0.3751,
+          "admissible_next_round": true,
+          "round_score": 0.508175,
+          "cumulative_score": 2.812884,
+          "participated": true,
+          "swarm": {
+            "lsw": -1.079178,
+            "participants": 2
+          }
+        },
+        {
+          "round": 12,
+          "allocation": {
+            "compute": 0.238977,
+            "energy": 0.36,
+            "security": 0.136673
+          },
+          "bid": {
+            "compute": 0.148497,
+            "energy": 0.930228,
+            "security": 0.163026
+          },
+          "spend": 1.241751,
+          "prices": {
+            "compute": 0.65215,
+            "energy": 0.365261,
+            "security": 0.724744
+          },
+          "capacities": {
+            "compute": 1.1639,
+            "energy": 0.8098,
+            "security": 0.7625
+          },
+          "utility_raw": 0.238119,
+          "utility": 0.238119,
+          "floor_violations": [],
+          "battery_drawn": 0.128384,
+          "battery": 0.2467,
+          "admissible_next_round": true,
+          "round_score": 0.238119,
+          "cumulative_score": 3.051003,
+          "participated": true,
+          "swarm": {
+            "lsw": -3.784674,
+            "participants": 3
+          }
+        },
+        {
+          "round": 13,
+          "allocation": {
+            "compute": 0.252083,
+            "energy": 0.125,
+            "security": 0.325867
+          },
+          "bid": {
+            "compute": 0.391331,
+            "energy": 0.174352,
+            "security": 0.581487
+          },
+          "spend": 1.14717,
+          "prices": {
+            "compute": 0.621386,
+            "energy": 2.583967,
+            "security": 1.19282
+          },
+          "capacities": {
+            "compute": 0.9765,
+            "energy": 0.8597,
+            "security": 1.05
+          },
+          "utility_raw": 0.221366,
+          "utility": 0.221366,
+          "floor_violations": [],
+          "battery_drawn": 0.047189,
+          "battery": 0.1995,
+          "admissible_next_round": true,
+          "round_score": 0.221366,
+          "cumulative_score": 3.272369,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.792152,
+            "participants": 4
+          }
+        },
+        {
+          "round": 14,
+          "allocation": {
+            "compute": 0.351313,
+            "energy": 0.085,
+            "security": 0.351097
+          },
+          "bid": {
+            "compute": 0.35307,
+            "energy": 0.09294,
+            "security": 0.485596
+          },
+          "spend": 0.931605,
+          "prices": {
+            "compute": 1.55239,
+            "energy": 1.394815,
+            "security": 1.784427
+          },
+          "capacities": {
+            "compute": 1.0816,
+            "energy": 1.1041,
+            "security": 1.0355
+          },
+          "utility_raw": 0.228595,
+          "utility": 0.228595,
+          "floor_violations": [],
+          "battery_drawn": 0.033368,
+          "battery": 0.1661,
+          "admissible_next_round": true,
+          "round_score": 0.228595,
+          "cumulative_score": 3.500964,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.396398,
+            "participants": 4
+          }
+        },
+        {
+          "round": 15,
+          "allocation": {
+            "compute": 1.1752,
+            "energy": 1.1576,
+            "security": 1.0381
+          },
+          "bid": {
+            "compute": 0.850235,
+            "energy": 9e-06,
+            "security": 0.000624
+          },
+          "spend": 0.850867,
+          "prices": {
+            "compute": 1.005,
+            "energy": 1.093406,
+            "security": 1.383083
+          },
+          "capacities": {
+            "compute": 1.1752,
+            "energy": 1.1576,
+            "security": 1.0381
+          },
+          "utility_raw": 1.118012,
+          "utility": 1.118012,
+          "floor_violations": [],
+          "battery_drawn": 0.403962,
+          "battery": 0.0,
+          "admissible_next_round": false,
+          "round_score": 1.118012,
+          "cumulative_score": 4.618976,
+          "participated": true,
+          "swarm": {
+            "lsw": 0.111552,
+            "participants": 1
+          }
+        },
+        {
+          "round": 17,
+          "allocation": {
+            "compute": 0.259329,
+            "energy": 8e-06,
+            "security": 0.349262
+          },
+          "bid": {
+            "compute": 0.309078,
+            "energy": 8e-06,
+            "security": 0.459906
+          },
+          "spend": 0.768992,
+          "prices": {
+            "compute": 0.612265,
+            "energy": 1.21022,
+            "security": 1.249352
+          },
+          "capacities": {
+            "compute": 0.8475,
+            "energy": 0.8494,
+            "security": 0.9522
+          },
+          "utility_raw": 0.119893,
+          "utility": 0.119893,
+          "floor_violations": [],
+          "battery_drawn": 0.004003,
+          "battery": 0.216,
+          "admissible_next_round": true,
+          "round_score": 0.119893,
+          "cumulative_score": 4.738868,
+          "participated": true,
+          "swarm": {
+            "lsw": -6.544289,
+            "participants": 4
+          }
+        },
+        {
+          "round": 18,
+          "allocation": {
+            "compute": 1.2731,
+            "energy": 0.7097,
+            "security": 0.9059
+          },
+          "bid": {
+            "compute": 0.87432,
+            "energy": 0.062282,
+            "security": 0.000641
+          },
+          "spend": 0.937244,
+          "prices": {
+            "compute": 1.191836,
+            "energy": 0.956012,
+            "security": 1.316793
+          },
+          "capacities": {
+            "compute": 1.2731,
+            "energy": 0.7097,
+            "security": 0.9059
+          },
+          "utility_raw": 0.913316,
+          "utility": 0.913316,
+          "floor_violations": [],
+          "battery_drawn": 0.249208,
+          "battery": 0.0,
+          "admissible_next_round": false,
+          "round_score": 0.913316,
+          "cumulative_score": 5.652184,
+          "participated": true,
+          "swarm": {
+            "lsw": -0.090673,
+            "participants": 1
+          }
+        },
+        {
+          "round": 20,
+          "allocation": {
+            "compute": 0.245228,
+            "energy": 1e-05,
+            "security": 0.287355
+          },
+          "bid": {
+            "compute": 0.340195,
+            "energy": 8e-06,
+            "security": 0.478945
+          },
+          "spend": 0.819148,
+          "prices": {
+            "compute": 0.645294,
+            "energy": 0.705386,
+            "security": 0.837979
+          },
+          "capacities": {
+            "compute": 0.773,
+            "energy": 1.1449,
+            "security": 0.78
+          },
+          "utility_raw": 0.104261,
+          "utility": 0.104261,
+          "floor_violations": [],
+          "battery_drawn": 0.004004,
+          "battery": 0.216,
+          "admissible_next_round": true,
+          "round_score": 0.104261,
+          "cumulative_score": 5.756446,
+          "participated": true,
+          "swarm": {
+            "lsw": -6.549113,
+            "participants": 4
+          }
+        },
+        {
+          "round": 21,
+          "allocation": {
+            "compute": 1.2903,
+            "energy": 1.129,
+            "security": 0.8738
+          },
+          "bid": {
+            "compute": 1.099745,
+            "energy": 1.1e-05,
+            "security": 0.002115
+          },
+          "spend": 1.101871,
+          "prices": {
+            "compute": 1.387262,
+            "energy": 0.789752,
+            "security": 1.666733
+          },
+          "capacities": {
+            "compute": 1.2903,
+            "energy": 1.129,
+            "security": 0.8738
+          },
+          "utility_raw": 1.071594,
+          "utility": 1.071594,
+          "floor_violations": [],
+          "battery_drawn": 0.394081,
+          "battery": 0.0,
+          "admissible_next_round": false,
+          "round_score": 1.071594,
+          "cumulative_score": 6.828039,
+          "participated": true,
+          "swarm": {
+            "lsw": 0.069147,
+            "participants": 1
+          }
+        },
+        {
+          "round": 23,
+          "allocation": {
+            "compute": 0.262776,
+            "energy": 8e-06,
+            "security": 0.315515
+          },
+          "bid": {
+            "compute": 0.356405,
+            "energy": 9e-06,
+            "security": 0.512474
+          },
+          "spend": 0.868888,
+          "prices": {
+            "compute": 0.730996,
+            "energy": 1.105022,
+            "security": 1.052906
+          },
+          "capacities": {
+            "compute": 0.8284,
+            "energy": 0.8871,
+            "security": 0.8704
+          },
+          "utility_raw": 0.113255,
+          "utility": 0.113255,
+          "floor_violations": [],
+          "battery_drawn": 0.004003,
+          "battery": 0.216,
+          "admissible_next_round": true,
+          "round_score": 0.113255,
+          "cumulative_score": 6.941295,
+          "participated": true,
+          "swarm": {
+            "lsw": -6.655882,
+            "participants": 4
+          }
+        },
+        {
+          "round": 24,
+          "allocation": {
+            "compute": 1.2571,
+            "energy": 1.2745,
+            "security": 0.7468
+          },
+          "bid": {
+            "compute": 1.056543,
+            "energy": 0.075263,
+            "security": 0.000775
+          },
+          "spend": 1.132581,
+          "prices": {
+            "compute": 1.356311,
+            "energy": 1.057647,
+            "security": 1.624247
+          },
+          "capacities": {
+            "compute": 1.2571,
+            "energy": 1.2745,
+            "security": 0.7468
+          },
+          "utility_raw": 1.063116,
+          "utility": 1.063116,
+          "floor_violations": [],
+          "battery_drawn": 0.444352,
+          "battery": 0.0,
+          "admissible_next_round": false,
+          "round_score": 1.063116,
+          "cumulative_score": 8.004411,
+          "participated": true,
+          "swarm": {
+            "lsw": 0.061205,
+            "participants": 1
+          }
+        },
+        {
+          "round": 26,
+          "allocation": {
+            "compute": 0.176965,
+            "energy": 0.125,
+            "security": 0.442937
+          },
+          "bid": {
+            "compute": 0.242319,
+            "energy": 0.09847,
+            "security": 0.458022
+          },
+          "spend": 0.798811,
+          "prices": {
+            "compute": 0.794007,
+            "energy": 0.995807,
+            "security": 0.804925
+          },
+          "capacities": {
+            "compute": 0.7368,
+            "energy": 1.1351,
+            "security": 1.2496
+          },
+          "utility_raw": 0.234074,
+          "utility": 0.234074,
+          "floor_violations": [],
+          "battery_drawn": 0.047189,
+          "battery": 0.1728,
+          "admissible_next_round": true,
+          "round_score": 0.234074,
+          "cumulative_score": 8.238485,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.387936,
+            "participants": 4
+          }
+        },
+        {
+          "round": 27,
+          "allocation": {
+            "compute": 0.8359,
+            "energy": 0.9249,
+            "security": 0.7382
+          },
+          "bid": {
+            "compute": 0.812266,
+            "energy": 8e-06,
+            "security": 0.000596
+          },
+          "spend": 0.81287,
+          "prices": {
+            "compute": 1.369303,
+            "energy": 0.787757,
+            "security": 1.034058
+          },
+          "capacities": {
+            "compute": 0.8359,
+            "energy": 0.9249,
+            "security": 0.7382
+          },
+          "utility_raw": 0.832418,
+          "utility": 0.832418,
+          "floor_violations": [],
+          "battery_drawn": 0.323562,
+          "battery": 0.0,
+          "admissible_next_round": false,
+          "round_score": 0.832418,
+          "cumulative_score": 9.070903,
+          "participated": true,
+          "swarm": {
+            "lsw": -0.18342,
+            "participants": 1
+          }
+        },
+        {
+          "round": 29,
+          "allocation": {
+            "compute": 0.350957,
+            "energy": 0.25,
+            "security": 0.226638
+          },
+          "bid": {
+            "compute": 0.39069,
+            "energy": 0.391847,
+            "security": 0.448114
+          },
+          "spend": 1.230651,
+          "prices": {
+            "compute": 0.913612,
+            "energy": 1.168712,
+            "security": 0.933592
+          },
+          "capacities": {
+            "compute": 1.2976,
+            "energy": 1.1155,
+            "security": 0.8748
+          },
+          "utility_raw": 0.265369,
+          "utility": 0.265369,
+          "floor_violations": [],
+          "battery_drawn": 0.090378,
+          "battery": 0.1296,
+          "admissible_next_round": true,
+          "round_score": 0.265369,
+          "cumulative_score": 9.336272,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.286151,
+            "participants": 4
+          }
+        },
+        {
+          "round": 30,
+          "allocation": {
+            "compute": 0.7782,
+            "energy": 0.761,
+            "security": 0.7881
+          },
+          "bid": {
+            "compute": 1.051891,
+            "energy": 1.1e-05,
+            "security": 0.000772
+          },
+          "spend": 1.052673,
+          "prices": {
+            "compute": 1.113213,
+            "energy": 1.567388,
+            "security": 1.977226
+          },
+          "capacities": {
+            "compute": 0.7782,
+            "energy": 0.761,
+            "security": 0.7881
+          },
+          "utility_raw": 0.775199,
+          "utility": 0.775199,
+          "floor_violations": [],
+          "battery_drawn": 0.266933,
+          "battery": 0.0,
+          "admissible_next_round": false,
+          "round_score": 0.775199,
+          "cumulative_score": 10.111471,
+          "participated": true,
+          "swarm": {
+            "lsw": -0.254636,
+            "participants": 1
+          }
+        },
+        {
+          "round": 32,
+          "allocation": {
+            "compute": 0.218466,
+            "energy": 0.072366,
+            "security": 0.408536
+          },
+          "bid": {
+            "compute": 0.393988,
+            "energy": 0.079301,
+            "security": 0.691976
+          },
+          "spend": 1.165264,
+          "prices": {
+            "compute": 0.925745,
+            "energy": 1.112807,
+            "security": 0.837979
+          },
+          "capacities": {
+            "compute": 0.7578,
+            "energy": 1.2019,
+            "security": 1.1674
+          },
+          "utility_raw": 0.206252,
+          "utility": 0.206252,
+          "floor_violations": [],
+          "battery_drawn": 0.029003,
+          "battery": 0.191,
+          "admissible_next_round": true,
+          "round_score": 0.206252,
+          "cumulative_score": 10.317722,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.454242,
+            "participants": 4
+          }
+        },
+        {
+          "round": 33,
+          "allocation": {
+            "compute": 0.8827,
+            "energy": 0.8934,
+            "security": 0.9929
+          },
+          "bid": {
+            "compute": 0.831974,
+            "energy": 0.050852,
+            "security": 0.018095
+          },
+          "spend": 0.900921,
+          "prices": {
+            "compute": 1.80343,
+            "energy": 1.095832,
+            "security": 1.693795
+          },
+          "capacities": {
+            "compute": 0.8827,
+            "energy": 0.8934,
+            "security": 0.9929
+          },
+          "utility_raw": 0.926006,
+          "utility": 0.926006,
+          "floor_violations": [],
+          "battery_drawn": 0.312679,
+          "battery": 0.0,
+          "admissible_next_round": false,
+          "round_score": 0.926006,
+          "cumulative_score": 11.243728,
+          "participated": true,
+          "swarm": {
+            "lsw": -0.076875,
+            "participants": 1
+          }
+        },
+        {
+          "round": 35,
+          "allocation": {
+            "compute": 0.287706,
+            "energy": 0.200422,
+            "security": 0.288309
+          },
+          "bid": {
+            "compute": 0.271806,
+            "energy": 0.398513,
+            "security": 0.37685
+          },
+          "spend": 1.04717,
+          "prices": {
+            "compute": 1.15178,
+            "energy": 1.662315,
+            "security": 1.400556
+          },
+          "capacities": {
+            "compute": 1.2695,
+            "energy": 0.7068,
+            "security": 1.2118
+          },
+          "utility_raw": 0.252862,
+          "utility": 0.252862,
+          "floor_violations": [],
+          "battery_drawn": 0.073248,
+          "battery": 0.1468,
+          "admissible_next_round": true,
+          "round_score": 0.252862,
+          "cumulative_score": 11.49659,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.494933,
+            "participants": 4
+          }
+        },
+        {
+          "round": 36,
+          "allocation": {
+            "compute": 0.38362,
+            "energy": 0.085,
+            "security": 0.335508
+          },
+          "bid": {
+            "compute": 0.382174,
+            "energy": 0.076083,
+            "security": 0.489311
+          },
+          "spend": 0.947568,
+          "prices": {
+            "compute": 0.944738,
+            "energy": 1.988374,
+            "security": 1.307107
+          },
+          "capacities": {
+            "compute": 1.2479,
+            "energy": 1.1659,
+            "security": 1.0309
+          },
+          "utility_raw": 0.230558,
+          "utility": 0.230558,
+          "floor_violations": [],
+          "battery_drawn": 0.033368,
+          "battery": 0.1134,
+          "admissible_next_round": true,
+          "round_score": 0.230558,
+          "cumulative_score": 11.727148,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.160106,
+            "participants": 4
+          }
+        },
+        {
+          "round": 37,
+          "allocation": {
+            "compute": 0.9978,
+            "energy": 0.9552,
+            "security": 1.2251
+          },
+          "bid": {
+            "compute": 1.065771,
+            "energy": 1.1e-05,
+            "security": 0.000782
+          },
+          "spend": 1.066564,
+          "prices": {
+            "compute": 0.996232,
+            "energy": 0.895095,
+            "security": 1.458418
+          },
+          "capacities": {
+            "compute": 0.9978,
+            "energy": 0.9552,
+            "security": 1.2251
+          },
+          "utility_raw": 1.060463,
+          "utility": 1.060463,
+          "floor_violations": [],
+          "battery_drawn": 0.334031,
+          "battery": 0.0,
+          "admissible_next_round": false,
+          "round_score": 1.060463,
+          "cumulative_score": 12.787611,
+          "participated": true,
+          "swarm": {
+            "lsw": 0.058705,
+            "participants": 1
+          }
+        },
+        {
+          "round": 39,
+          "allocation": {
+            "compute": 0.145287,
+            "energy": 0.364358,
+            "security": 0.187897
+          },
+          "bid": {
+            "compute": 0.098835,
+            "energy": 0.497738,
+            "security": 0.154052
+          },
+          "spend": 0.750625,
+          "prices": {
+            "compute": 0.759783,
+            "energy": 1.49641,
+            "security": 1.066968
+          },
+          "capacities": {
+            "compute": 1.1172,
+            "energy": 0.8982,
+            "security": 1.2386
+          },
+          "utility_raw": 0.234939,
+          "utility": 0.234939,
+          "floor_violations": [],
+          "battery_drawn": 0.129889,
+          "battery": 0.0901,
+          "admissible_next_round": true,
+          "round_score": 0.234939,
+          "cumulative_score": 13.02255,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.369955,
+            "participants": 4
+          }
+        },
+        {
+          "round": 40,
+          "allocation": {
+            "compute": 0.238483,
+            "energy": 0.103904,
+            "security": 0.309302
+          },
+          "bid": {
+            "compute": 0.298326,
+            "energy": 0.105271,
+            "security": 0.453568
+          },
+          "spend": 0.857164,
+          "prices": {
+            "compute": 0.680273,
+            "energy": 1.366069,
+            "security": 0.819874
+          },
+          "capacities": {
+            "compute": 0.8421,
+            "energy": 0.9432,
+            "security": 0.9681
+          },
+          "utility_raw": 0.20229,
+          "utility": 0.20229,
+          "floor_violations": [],
+          "battery_drawn": 0.0399,
+          "battery": 0.0502,
+          "admissible_next_round": true,
+          "round_score": 0.20229,
+          "cumulative_score": 13.22484,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.932829,
+            "participants": 4
+          }
+        },
+        {
+          "round": 41,
+          "allocation": {
+            "compute": 1.0016,
+            "energy": 1.1725,
+            "security": 0.9045
+          },
+          "bid": {
+            "compute": 0.911785,
+            "energy": 9e-06,
+            "security": 0.000669
+          },
+          "spend": 0.912463,
+          "prices": {
+            "compute": 1.250928,
+            "energy": 1.013151,
+            "security": 1.466424
+          },
+          "capacities": {
+            "compute": 1.0016,
+            "energy": 1.1725,
+            "security": 0.9045
+          },
+          "utility_raw": 1.028152,
+          "utility": 1.028152,
+          "floor_violations": [],
+          "battery_drawn": 0.40911,
+          "battery": 0.0,
+          "admissible_next_round": false,
+          "round_score": 1.028152,
+          "cumulative_score": 14.252993,
+          "participated": true,
+          "swarm": {
+            "lsw": 0.027763,
+            "participants": 1
+          }
+        },
+        {
+          "round": 43,
+          "allocation": {
+            "compute": 0.384889,
+            "energy": 0.03,
+            "security": 0.38182
+          },
+          "bid": {
+            "compute": 0.419919,
+            "energy": 0.034099,
+            "security": 0.581822
+          },
+          "spend": 1.03584,
+          "prices": {
+            "compute": 1.10751,
+            "energy": 1.391816,
+            "security": 1.207621
+          },
+          "capacities": {
+            "compute": 1.1698,
+            "energy": 0.9984,
+            "security": 1.1368
+          },
+          "utility_raw": 0.201988,
+          "utility": 0.201988,
+          "floor_violations": [],
+          "battery_drawn": 0.014365,
+          "battery": 0.2056,
+          "admissible_next_round": true,
+          "round_score": 0.201988,
+          "cumulative_score": 14.454981,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.421914,
+            "participants": 4
+          }
+        },
+        {
+          "round": 44,
+          "allocation": {
+            "compute": 0.9486,
+            "energy": 0.9171,
+            "security": 1.107
+          },
+          "bid": {
+            "compute": 0.797823,
+            "energy": 8e-06,
+            "security": 0.000585
+          },
+          "spend": 0.798416,
+          "prices": {
+            "compute": 1.091011,
+            "energy": 1.136642,
+            "security": 1.523813
+          },
+          "capacities": {
+            "compute": 0.9486,
+            "energy": 0.9171,
+            "security": 1.107
+          },
+          "utility_raw": 0.992152,
+          "utility": 0.992152,
+          "floor_violations": [],
+          "battery_drawn": 0.320867,
+          "battery": 0.0,
+          "admissible_next_round": false,
+          "round_score": 0.992152,
+          "cumulative_score": 15.447132,
+          "participated": true,
+          "swarm": {
+            "lsw": -0.007879,
+            "participants": 1
+          }
+        },
+        {
+          "round": 46,
+          "allocation": {
+            "compute": 0.372825,
+            "energy": 0.18,
+            "security": 0.286564
+          },
+          "bid": {
+            "compute": 0.358435,
+            "energy": 0.194717,
+            "security": 0.437779
+          },
+          "spend": 0.990931,
+          "prices": {
+            "compute": 0.933813,
+            "energy": 1.29687,
+            "security": 1.153976
+          },
+          "capacities": {
+            "compute": 1.2602,
+            "energy": 1.2048,
+            "security": 0.9484
+          },
+          "utility_raw": 0.26263,
+          "utility": 0.26263,
+          "floor_violations": [],
+          "battery_drawn": 0.066192,
+          "battery": 0.1538,
+          "admissible_next_round": true,
+          "round_score": 0.26263,
+          "cumulative_score": 15.709763,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.123761,
+            "participants": 4
+          }
+        },
+        {
+          "round": 47,
+          "allocation": {
+            "compute": 0.95,
+            "energy": 0.8196,
+            "security": 0.942
+          },
+          "bid": {
+            "compute": 0.722015,
+            "energy": 0.039827,
+            "security": 0.196636
+          },
+          "spend": 0.958479,
+          "prices": {
+            "compute": 0.961404,
+            "energy": 1.081762,
+            "security": 1.527684
+          },
+          "capacities": {
+            "compute": 0.95,
+            "energy": 0.8196,
+            "security": 0.942
+          },
+          "utility_raw": 0.896453,
+          "utility": 0.896453,
+          "floor_violations": [],
+          "battery_drawn": 0.28718,
+          "battery": 0.0,
+          "admissible_next_round": false,
+          "round_score": 0.896453,
+          "cumulative_score": 16.606215,
+          "participated": true,
+          "swarm": {
+            "lsw": -0.10931,
+            "participants": 1
+          }
+        },
+        {
+          "round": 49,
+          "allocation": {
+            "compute": 0.228431,
+            "energy": 0.18,
+            "security": 0.289775
+          },
+          "bid": {
+            "compute": 0.331325,
+            "energy": 0.343698,
+            "security": 0.519702
+          },
+          "spend": 1.194724,
+          "prices": {
+            "compute": 0.770288,
+            "energy": 1.929271,
+            "security": 0.816351
+          },
+          "capacities": {
+            "compute": 0.9214,
+            "energy": 0.7353,
+            "security": 1.1366
+          },
+          "utility_raw": 0.229812,
+          "utility": 0.229812,
+          "floor_violations": [],
+          "battery_drawn": 0.066192,
+          "battery": 0.1538,
+          "admissible_next_round": true,
+          "round_score": 0.229812,
+          "cumulative_score": 16.836027,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.92525,
+            "participants": 4
+          }
+        },
+        {
+          "round": 50,
+          "allocation": {
+            "compute": 0.221038,
+            "energy": 0.28827,
+            "security": 0.292051
+          },
+          "bid": {
+            "compute": 0.216443,
+            "energy": 0.324441,
+            "security": 0.33381
+          },
+          "spend": 0.874694,
+          "prices": {
+            "compute": 1.450438,
+            "energy": 1.909433,
+            "security": 1.793468
+          },
+          "capacities": {
+            "compute": 0.9639,
+            "energy": 1.1491,
+            "security": 1.1038
+          },
+          "utility_raw": 0.271421,
+          "utility": 0.271421,
+          "floor_violations": [],
+          "battery_drawn": 0.1036,
+          "battery": 0.0502,
+          "admissible_next_round": true,
+          "round_score": 0.271421,
+          "cumulative_score": 17.107448,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.230428,
+            "participants": 4
+          }
+        },
+        {
+          "round": 51,
+          "allocation": {
+            "compute": 1.1932,
+            "energy": 1.2137,
+            "security": 1.113
+          },
+          "bid": {
+            "compute": 0.995297,
+            "energy": 1e-05,
+            "security": 0.00073
+          },
+          "spend": 0.996037,
+          "prices": {
+            "compute": 0.979213,
+            "energy": 1.125477,
+            "security": 1.142986
+          },
+          "capacities": {
+            "compute": 1.1932,
+            "energy": 1.2137,
+            "security": 1.113
+          },
+          "utility_raw": 1.171517,
+          "utility": 1.171517,
+          "floor_violations": [],
+          "battery_drawn": 0.423345,
+          "battery": 0.0,
+          "admissible_next_round": false,
+          "round_score": 1.171517,
+          "cumulative_score": 18.278965,
+          "participated": true,
+          "swarm": {
+            "lsw": 0.158299,
+            "participants": 1
+          }
+        },
+        {
+          "round": 53,
+          "allocation": {
+            "compute": 0.285726,
+            "energy": 0.18,
+            "security": 0.224573
+          },
+          "bid": {
+            "compute": 0.362581,
+            "energy": 0.272722,
+            "security": 0.459034
+          },
+          "spend": 1.094337,
+          "prices": {
+            "compute": 1.305924,
+            "energy": 0.962094,
+            "security": 0.863247
+          },
+          "capacities": {
+            "compute": 0.9617,
+            "energy": 1.0238,
+            "security": 0.7856
+          },
+          "utility_raw": 0.221502,
+          "utility": 0.221502,
+          "floor_violations": [],
+          "battery_drawn": 0.066192,
+          "battery": 0.1538,
+          "admissible_next_round": true,
+          "round_score": 0.221502,
+          "cumulative_score": 18.500467,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.918945,
+            "participants": 4
+          }
+        },
+        {
+          "round": 54,
+          "allocation": {
+            "compute": 1.0358,
+            "energy": 1.0705,
+            "security": 1.2334
+          },
+          "bid": {
+            "compute": 1.029437,
+            "energy": 1e-05,
+            "security": 0.000755
+          },
+          "spend": 1.030203,
+          "prices": {
+            "compute": 1.268981,
+            "energy": 1.51512,
+            "security": 2.044029
+          },
+          "capacities": {
+            "compute": 1.0358,
+            "energy": 1.0705,
+            "security": 1.2334
+          },
+          "utility_raw": 1.118921,
+          "utility": 1.118921,
+          "floor_violations": [],
+          "battery_drawn": 0.373868,
+          "battery": 0.0,
+          "admissible_next_round": false,
+          "round_score": 1.118921,
+          "cumulative_score": 19.619388,
+          "participated": true,
+          "swarm": {
+            "lsw": 0.112365,
+            "participants": 1
+          }
+        },
+        {
+          "round": 56,
+          "allocation": {
+            "compute": 0.353753,
+            "energy": 0.125,
+            "security": 0.392479
+          },
+          "bid": {
+            "compute": 0.438204,
+            "energy": 0.147988,
+            "security": 0.617336
+          },
+          "spend": 1.203528,
+          "prices": {
+            "compute": 0.728833,
+            "energy": 1.687122,
+            "security": 1.159393
+          },
+          "capacities": {
+            "compute": 1.2426,
+            "energy": 1.1332,
+            "security": 1.2291
+          },
+          "utility_raw": 0.264729,
+          "utility": 0.264729,
+          "floor_violations": [],
+          "battery_drawn": 0.047189,
+          "battery": 0.1728,
+          "admissible_next_round": true,
+          "round_score": 0.264729,
+          "cumulative_score": 19.884117,
+          "participated": true,
+          "swarm": {
+            "lsw": -4.904161,
+            "participants": 4
+          }
+        },
+        {
+          "round": 57,
+          "allocation": {
+            "compute": 0.9692,
+            "energy": 0.7892,
+            "security": 1.2283
+          },
+          "bid": {
+            "compute": 1.1683,
+            "energy": 1.2e-05,
+            "security": 0.025751
+          },
+          "spend": 1.194063,
+          "prices": {
+            "compute": 1.238728,
+            "energy": 1.183903,
+            "security": 1.572915
+          },
+          "capacities": {
+            "compute": 0.9692,
+            "energy": 0.7892,
+            "security": 1.2283
+          },
+          "utility_raw": 0.985571,
+          "utility": 0.985571,
+          "floor_violations": [],
+          "battery_drawn": 0.276676,
+          "battery": 0.0,
+          "admissible_next_round": false,
+          "round_score": 0.985571,
+          "cumulative_score": 20.869689,
+          "participated": true,
+          "swarm": {
+            "lsw": -0.014534,
+            "participants": 1
+          }
+        }
+      ]
+    },
+    "expected_bid": {
+      "compute": 0.2959609382714044,
+      "energy": 0.32575415,
+      "security": 0.5304769117285957
+    }
+  },
+  {
+    "seed": 20033,
+    "round": 60,
+    "inputs": {
+      "budget": 0.768249,
+      "prices": {
+        "compute": 1.546969,
+        "energy": 1.809745,
+        "security": 1.402586
+      },
+      "capacities": {
+        "compute": 0.8292,
+        "energy": 1.135,
+        "security": 1.0034
+      },
+      "profile": {
+        "features": {
+          "compute_cap": 0.4458,
+          "ram_cap": 0.6132,
+          "battery": 0.1538,
+          "security_posture": 0.4166,
+          "compromise": 0.0,
+          "mobility": 0.1517
+        },
+        "weights": {
+          "compute": 0.2576,
+          "energy": 0.3803,
+          "security": 0.3621
+        },
+        "q_min": 0.1397,
+        "s_min": 0.1306,
+        "_market": {
+          "round": 60,
+          "total_rounds": 60,
+          "nodes": [
+            {
+              "node_id": "node-001",
+              "team": "bot-naive-max",
+              "features": {
+                "compute_cap": 0.4458,
+                "ram_cap": 0.6132,
+                "battery": 0.0,
+                "security_posture": 0.4166,
+                "compromise": 0.0,
+                "mobility": 0.1517
+              },
+              "weights": {
+                "compute": 0.2576,
+                "energy": 0.3803,
+                "security": 0.3621
+              },
+              "q_min": 0.1397,
+              "s_min": 0.1306,
+              "active": true,
+              "ejected": false,
+              "is_baseline": true
+            },
+            {
+              "node_id": "node-002",
+              "team": "bot-even-split",
+              "features": {
+                "compute_cap": 0.4458,
+                "ram_cap": 0.6132,
+                "battery": 0.0393,
+                "security_posture": 0.4166,
+                "compromise": 0.0,
+                "mobility": 0.1517
+              },
+              "weights": {
+                "compute": 0.2576,
+                "energy": 0.3803,
+                "security": 0.3621
+              },
+              "q_min": 0.1397,
+              "s_min": 0.1306,
+              "active": true,
+              "ejected": false,
+              "is_baseline": true
+            },
+            {
+              "node_id": "node-003",
+              "team": "bot-proportional",
+              "features": {
+                "compute_cap": 0.4458,
+                "ram_cap": 0.6132,
+                "battery": 0.0,
+                "security_posture": 0.4166,
+                "compromise": 0.0,
+                "mobility": 0.1517
+              },
+              "weights": {
+                "compute": 0.2576,
+                "energy": 0.3803,
+                "security": 0.3621
+              },
+              "q_min": 0.1397,
+              "s_min": 0.1306,
+              "active": true,
+              "ejected": false,
+              "is_baseline": true
+            }
+          ]
+        }
+      },
+      "history": [
+        {
+          "round": 1,
+          "allocation": {
+            "compute": 0.24431,
+            "energy": 0.085,
+            "security": 0.254824
+          },
+          "bid": {
+            "compute": 0.309297,
+            "energy": 0.079249,
+            "security": 0.420543
+          },
+          "spend": 0.809089,
+          "prices": {
+            "compute": 1.0,
+            "energy": 1.0,
+            "security": 1.0
+          },
+          "capacities": {
+            "compute": 0.8123,
+            "energy": 1.0325,
+            "security": 0.7546
+          },
+          "utility_raw": 0.177232,
+          "utility": 0.177232,
+          "floor_violations": [],
+          "battery_drawn": 0.033368,
+          "battery": 0.8732,
+          "admissible_next_round": true,
+          "round_score": 0.177232,
+          "cumulative_score": 0.177232,
+          "participated": true,
+          "swarm": {
+            "lsw": -6.218367,
+            "participants": 4
+          }
+        },
+        {
+          "round": 2,
+          "allocation": {
+            "compute": 0.404052,
+            "energy": 0.085,
+            "security": 0.221962
+          },
+          "bid": {
+            "compute": 0.355297,
+            "energy": 0.084487,
+            "security": 0.395685
+          },
+          "spend": 0.835469,
+          "prices": {
+            "compute": 1.266004,
+            "energy": 0.932344,
+            "security": 1.650326
+          },
+          "capacities": {
+            "compute": 1.1284,
+            "energy": 1.095,
+            "security": 0.7075
+          },
+          "utility_raw": 0.198216,
+          "utility": 0.198216,
+          "floor_violations": [],
+          "battery_drawn": 0.033368,
+          "battery": 0.8398,
+          "admissible_next_round": true,
+          "round_score": 0.198216,
+          "cumulative_score": 0.375449,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.885458,
+            "participants": 4
+          }
+        },
+        {
+          "round": 3,
+          "allocation": {
+            "compute": 0.171414,
+            "energy": 0.125,
+            "security": 0.439892
+          },
+          "bid": {
+            "compute": 0.252195,
+            "energy": 0.108735,
+            "security": 0.460735
+          },
+          "spend": 0.821664,
+          "prices": {
+            "compute": 0.879334,
+            "energy": 0.993969,
+            "security": 1.782671
+          },
+          "capacities": {
+            "compute": 0.7111,
+            "energy": 1.1967,
+            "security": 1.1452
+          },
+          "utility_raw": 0.23162,
+          "utility": 0.23162,
+          "floor_violations": [],
+          "battery_drawn": 0.047189,
+          "battery": 0.7926,
+          "admissible_next_round": true,
+          "round_score": 0.23162,
+          "cumulative_score": 0.607068,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.500015,
+            "participants": 4
+          }
+        },
+        {
+          "round": 4,
+          "allocation": {
+            "compute": 0.222977,
+            "energy": 0.055,
+            "security": 0.418625
+          },
+          "bid": {
+            "compute": 0.350132,
+            "energy": 0.065037,
+            "security": 0.600689
+          },
+          "spend": 1.015859,
+          "prices": {
+            "compute": 1.471257,
+            "energy": 0.869879,
+            "security": 1.047381
+          },
+          "capacities": {
+            "compute": 0.7797,
+            "energy": 1.0051,
+            "security": 1.1503
+          },
+          "utility_raw": 0.198124,
+          "utility": 0.198124,
+          "floor_violations": [],
+          "battery_drawn": 0.023003,
+          "battery": 0.7696,
+          "admissible_next_round": true,
+          "round_score": 0.198124,
+          "cumulative_score": 0.805193,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.736342,
+            "participants": 4
+          }
+        },
+        {
+          "round": 5,
+          "allocation": {
+            "compute": 0.385828,
+            "energy": 0.085,
+            "security": 0.36583
+          },
+          "bid": {
+            "compute": 0.384663,
+            "energy": 0.123769,
+            "security": 0.529109
+          },
+          "spend": 1.037541,
+          "prices": {
+            "compute": 1.57026,
+            "energy": 1.182497,
+            "security": 1.43491
+          },
+          "capacities": {
+            "compute": 1.2007,
+            "energy": 0.8857,
+            "security": 1.1501
+          },
+          "utility_raw": 0.239998,
+          "utility": 0.239998,
+          "floor_violations": [],
+          "battery_drawn": 0.033368,
+          "battery": 0.7362,
+          "admissible_next_round": true,
+          "round_score": 0.239998,
+          "cumulative_score": 1.045191,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.411727,
+            "participants": 4
+          }
+        },
+        {
+          "round": 6,
+          "allocation": {
+            "compute": 0.300857,
+            "energy": 0.085,
+            "security": 0.301369
+          },
+          "bid": {
+            "compute": 0.461246,
+            "energy": 0.128519,
+            "security": 0.624416
+          },
+          "spend": 1.214182,
+          "prices": {
+            "compute": 0.996981,
+            "energy": 1.456104,
+            "security": 1.446325
+          },
+          "capacities": {
+            "compute": 0.9803,
+            "energy": 0.9769,
+            "security": 0.9058
+          },
+          "utility_raw": 0.203358,
+          "utility": 0.203358,
+          "floor_violations": [],
+          "battery_drawn": 0.033368,
+          "battery": 0.7028,
+          "admissible_next_round": true,
+          "round_score": 0.203358,
+          "cumulative_score": 1.248549,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.847166,
+            "participants": 4
+          }
+        },
+        {
+          "round": 7,
+          "allocation": {
+            "compute": 0.153204,
+            "energy": 0.192462,
+            "security": 0.386951
+          },
+          "bid": {
+            "compute": 0.207097,
+            "energy": 0.167269,
+            "security": 0.381783
+          },
+          "spend": 0.756149,
+          "prices": {
+            "compute": 1.533108,
+            "energy": 1.51199,
+            "security": 2.071935
+          },
+          "capacities": {
+            "compute": 0.7117,
+            "energy": 1.1268,
+            "security": 1.0979
+          },
+          "utility_raw": 0.242963,
+          "utility": 0.242963,
+          "floor_violations": [],
+          "battery_drawn": 0.070498,
+          "battery": 0.6323,
+          "admissible_next_round": true,
+          "round_score": 0.242963,
+          "cumulative_score": 1.491512,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.594428,
+            "participants": 4
+          }
+        },
+        {
+          "round": 8,
+          "allocation": {
+            "compute": 0.27429,
+            "energy": 0.085,
+            "security": 0.293022
+          },
+          "bid": {
+            "compute": 0.288434,
+            "energy": 0.088423,
+            "security": 0.395122
+          },
+          "spend": 0.771979,
+          "prices": {
+            "compute": 1.351775,
+            "energy": 0.869099,
+            "security": 0.986644
+          },
+          "capacities": {
+            "compute": 0.92,
+            "energy": 0.9152,
+            "security": 0.8665
+          },
+          "utility_raw": 0.195185,
+          "utility": 0.195185,
+          "floor_violations": [],
+          "battery_drawn": 0.033368,
+          "battery": 0.5989,
+          "admissible_next_round": true,
+          "round_score": 0.195185,
+          "cumulative_score": 1.686698,
+          "participated": true,
+          "swarm": {
+            "lsw": -6.069456,
+            "participants": 4
+          }
+        },
+        {
+          "round": 9,
+          "allocation": {
+            "compute": 0.464196,
+            "energy": 0.355266,
+            "security": 0.498053
+          },
+          "bid": {
+            "compute": 0.260836,
+            "energy": 0.167279,
+            "security": 0.333168
+          },
+          "spend": 0.761284,
+          "prices": {
+            "compute": 1.051566,
+            "energy": 1.040267,
+            "security": 1.348439
+          },
+          "capacities": {
+            "compute": 0.9158,
+            "energy": 0.8942,
+            "security": 0.8774
+          },
+          "utility_raw": 0.432604,
+          "utility": 0.432604,
+          "floor_violations": [],
+          "battery_drawn": 0.126748,
+          "battery": 0.4722,
+          "admissible_next_round": true,
+          "round_score": 0.432604,
+          "cumulative_score": 2.119302,
+          "participated": true,
+          "swarm": {
+            "lsw": -1.623071,
+            "participants": 2
+          }
+        },
+        {
+          "round": 10,
+          "allocation": {
+            "compute": 0.315484,
+            "energy": 0.007787,
+            "security": 0.485638
+          },
+          "bid": {
+            "compute": 0.331715,
+            "energy": 0.00505,
+            "security": 0.494769
+          },
+          "spend": 0.831534,
+          "prices": {
+            "compute": 0.561911,
+            "energy": 0.470858,
+            "security": 0.668942
+          },
+          "capacities": {
+            "compute": 0.7797,
+            "energy": 1.0283,
+            "security": 0.9894
+          },
+          "utility_raw": 0.185406,
+          "utility": 0.185406,
+          "floor_violations": [],
+          "battery_drawn": 0.006691,
+          "battery": 0.4655,
+          "admissible_next_round": true,
+          "round_score": 0.185406,
+          "cumulative_score": 2.304708,
+          "participated": true,
+          "swarm": {
+            "lsw": -3.888331,
+            "participants": 3
+          }
+        },
+        {
+          "round": 11,
+          "allocation": {
+            "compute": 0.646536,
+            "energy": 0.25,
+            "security": 0.759582
+          },
+          "bid": {
+            "compute": 0.421638,
+            "energy": 0.091315,
+            "security": 0.550503
+          },
+          "spend": 1.063456,
+          "prices": {
+            "compute": 1.051447,
+            "energy": 0.648436,
+            "security": 1.018802
+          },
+          "capacities": {
+            "compute": 1.1901,
+            "energy": 1.2205,
+            "security": 1.2487
+          },
+          "utility_raw": 0.508175,
+          "utility": 0.508175,
+          "floor_violations": [],
+          "battery_drawn": 0.090378,
+          "battery": 0.3751,
+          "admissible_next_round": true,
+          "round_score": 0.508175,
+          "cumulative_score": 2.812884,
+          "participated": true,
+          "swarm": {
+            "lsw": -1.079178,
+            "participants": 2
+          }
+        },
+        {
+          "round": 12,
+          "allocation": {
+            "compute": 0.238977,
+            "energy": 0.36,
+            "security": 0.136673
+          },
+          "bid": {
+            "compute": 0.148497,
+            "energy": 0.930228,
+            "security": 0.163026
+          },
+          "spend": 1.241751,
+          "prices": {
+            "compute": 0.65215,
+            "energy": 0.365261,
+            "security": 0.724744
+          },
+          "capacities": {
+            "compute": 1.1639,
+            "energy": 0.8098,
+            "security": 0.7625
+          },
+          "utility_raw": 0.238119,
+          "utility": 0.238119,
+          "floor_violations": [],
+          "battery_drawn": 0.128384,
+          "battery": 0.2467,
+          "admissible_next_round": true,
+          "round_score": 0.238119,
+          "cumulative_score": 3.051003,
+          "participated": true,
+          "swarm": {
+            "lsw": -3.784674,
+            "participants": 3
+          }
+        },
+        {
+          "round": 13,
+          "allocation": {
+            "compute": 0.252083,
+            "energy": 0.125,
+            "security": 0.325867
+          },
+          "bid": {
+            "compute": 0.391331,
+            "energy": 0.174352,
+            "security": 0.581487
+          },
+          "spend": 1.14717,
+          "prices": {
+            "compute": 0.621386,
+            "energy": 2.583967,
+            "security": 1.19282
+          },
+          "capacities": {
+            "compute": 0.9765,
+            "energy": 0.8597,
+            "security": 1.05
+          },
+          "utility_raw": 0.221366,
+          "utility": 0.221366,
+          "floor_violations": [],
+          "battery_drawn": 0.047189,
+          "battery": 0.1995,
+          "admissible_next_round": true,
+          "round_score": 0.221366,
+          "cumulative_score": 3.272369,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.792152,
+            "participants": 4
+          }
+        },
+        {
+          "round": 14,
+          "allocation": {
+            "compute": 0.351313,
+            "energy": 0.085,
+            "security": 0.351097
+          },
+          "bid": {
+            "compute": 0.35307,
+            "energy": 0.09294,
+            "security": 0.485596
+          },
+          "spend": 0.931605,
+          "prices": {
+            "compute": 1.55239,
+            "energy": 1.394815,
+            "security": 1.784427
+          },
+          "capacities": {
+            "compute": 1.0816,
+            "energy": 1.1041,
+            "security": 1.0355
+          },
+          "utility_raw": 0.228595,
+          "utility": 0.228595,
+          "floor_violations": [],
+          "battery_drawn": 0.033368,
+          "battery": 0.1661,
+          "admissible_next_round": true,
+          "round_score": 0.228595,
+          "cumulative_score": 3.500964,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.396398,
+            "participants": 4
+          }
+        },
+        {
+          "round": 15,
+          "allocation": {
+            "compute": 1.1752,
+            "energy": 1.1576,
+            "security": 1.0381
+          },
+          "bid": {
+            "compute": 0.850235,
+            "energy": 9e-06,
+            "security": 0.000624
+          },
+          "spend": 0.850867,
+          "prices": {
+            "compute": 1.005,
+            "energy": 1.093406,
+            "security": 1.383083
+          },
+          "capacities": {
+            "compute": 1.1752,
+            "energy": 1.1576,
+            "security": 1.0381
+          },
+          "utility_raw": 1.118012,
+          "utility": 1.118012,
+          "floor_violations": [],
+          "battery_drawn": 0.403962,
+          "battery": 0.0,
+          "admissible_next_round": false,
+          "round_score": 1.118012,
+          "cumulative_score": 4.618976,
+          "participated": true,
+          "swarm": {
+            "lsw": 0.111552,
+            "participants": 1
+          }
+        },
+        {
+          "round": 17,
+          "allocation": {
+            "compute": 0.259329,
+            "energy": 8e-06,
+            "security": 0.349262
+          },
+          "bid": {
+            "compute": 0.309078,
+            "energy": 8e-06,
+            "security": 0.459906
+          },
+          "spend": 0.768992,
+          "prices": {
+            "compute": 0.612265,
+            "energy": 1.21022,
+            "security": 1.249352
+          },
+          "capacities": {
+            "compute": 0.8475,
+            "energy": 0.8494,
+            "security": 0.9522
+          },
+          "utility_raw": 0.119893,
+          "utility": 0.119893,
+          "floor_violations": [],
+          "battery_drawn": 0.004003,
+          "battery": 0.216,
+          "admissible_next_round": true,
+          "round_score": 0.119893,
+          "cumulative_score": 4.738868,
+          "participated": true,
+          "swarm": {
+            "lsw": -6.544289,
+            "participants": 4
+          }
+        },
+        {
+          "round": 18,
+          "allocation": {
+            "compute": 1.2731,
+            "energy": 0.7097,
+            "security": 0.9059
+          },
+          "bid": {
+            "compute": 0.87432,
+            "energy": 0.062282,
+            "security": 0.000641
+          },
+          "spend": 0.937244,
+          "prices": {
+            "compute": 1.191836,
+            "energy": 0.956012,
+            "security": 1.316793
+          },
+          "capacities": {
+            "compute": 1.2731,
+            "energy": 0.7097,
+            "security": 0.9059
+          },
+          "utility_raw": 0.913316,
+          "utility": 0.913316,
+          "floor_violations": [],
+          "battery_drawn": 0.249208,
+          "battery": 0.0,
+          "admissible_next_round": false,
+          "round_score": 0.913316,
+          "cumulative_score": 5.652184,
+          "participated": true,
+          "swarm": {
+            "lsw": -0.090673,
+            "participants": 1
+          }
+        },
+        {
+          "round": 20,
+          "allocation": {
+            "compute": 0.245228,
+            "energy": 1e-05,
+            "security": 0.287355
+          },
+          "bid": {
+            "compute": 0.340195,
+            "energy": 8e-06,
+            "security": 0.478945
+          },
+          "spend": 0.819148,
+          "prices": {
+            "compute": 0.645294,
+            "energy": 0.705386,
+            "security": 0.837979
+          },
+          "capacities": {
+            "compute": 0.773,
+            "energy": 1.1449,
+            "security": 0.78
+          },
+          "utility_raw": 0.104261,
+          "utility": 0.104261,
+          "floor_violations": [],
+          "battery_drawn": 0.004004,
+          "battery": 0.216,
+          "admissible_next_round": true,
+          "round_score": 0.104261,
+          "cumulative_score": 5.756446,
+          "participated": true,
+          "swarm": {
+            "lsw": -6.549113,
+            "participants": 4
+          }
+        },
+        {
+          "round": 21,
+          "allocation": {
+            "compute": 1.2903,
+            "energy": 1.129,
+            "security": 0.8738
+          },
+          "bid": {
+            "compute": 1.099745,
+            "energy": 1.1e-05,
+            "security": 0.002115
+          },
+          "spend": 1.101871,
+          "prices": {
+            "compute": 1.387262,
+            "energy": 0.789752,
+            "security": 1.666733
+          },
+          "capacities": {
+            "compute": 1.2903,
+            "energy": 1.129,
+            "security": 0.8738
+          },
+          "utility_raw": 1.071594,
+          "utility": 1.071594,
+          "floor_violations": [],
+          "battery_drawn": 0.394081,
+          "battery": 0.0,
+          "admissible_next_round": false,
+          "round_score": 1.071594,
+          "cumulative_score": 6.828039,
+          "participated": true,
+          "swarm": {
+            "lsw": 0.069147,
+            "participants": 1
+          }
+        },
+        {
+          "round": 23,
+          "allocation": {
+            "compute": 0.262776,
+            "energy": 8e-06,
+            "security": 0.315515
+          },
+          "bid": {
+            "compute": 0.356405,
+            "energy": 9e-06,
+            "security": 0.512474
+          },
+          "spend": 0.868888,
+          "prices": {
+            "compute": 0.730996,
+            "energy": 1.105022,
+            "security": 1.052906
+          },
+          "capacities": {
+            "compute": 0.8284,
+            "energy": 0.8871,
+            "security": 0.8704
+          },
+          "utility_raw": 0.113255,
+          "utility": 0.113255,
+          "floor_violations": [],
+          "battery_drawn": 0.004003,
+          "battery": 0.216,
+          "admissible_next_round": true,
+          "round_score": 0.113255,
+          "cumulative_score": 6.941295,
+          "participated": true,
+          "swarm": {
+            "lsw": -6.655882,
+            "participants": 4
+          }
+        },
+        {
+          "round": 24,
+          "allocation": {
+            "compute": 1.2571,
+            "energy": 1.2745,
+            "security": 0.7468
+          },
+          "bid": {
+            "compute": 1.056543,
+            "energy": 0.075263,
+            "security": 0.000775
+          },
+          "spend": 1.132581,
+          "prices": {
+            "compute": 1.356311,
+            "energy": 1.057647,
+            "security": 1.624247
+          },
+          "capacities": {
+            "compute": 1.2571,
+            "energy": 1.2745,
+            "security": 0.7468
+          },
+          "utility_raw": 1.063116,
+          "utility": 1.063116,
+          "floor_violations": [],
+          "battery_drawn": 0.444352,
+          "battery": 0.0,
+          "admissible_next_round": false,
+          "round_score": 1.063116,
+          "cumulative_score": 8.004411,
+          "participated": true,
+          "swarm": {
+            "lsw": 0.061205,
+            "participants": 1
+          }
+        },
+        {
+          "round": 26,
+          "allocation": {
+            "compute": 0.176965,
+            "energy": 0.125,
+            "security": 0.442937
+          },
+          "bid": {
+            "compute": 0.242319,
+            "energy": 0.09847,
+            "security": 0.458022
+          },
+          "spend": 0.798811,
+          "prices": {
+            "compute": 0.794007,
+            "energy": 0.995807,
+            "security": 0.804925
+          },
+          "capacities": {
+            "compute": 0.7368,
+            "energy": 1.1351,
+            "security": 1.2496
+          },
+          "utility_raw": 0.234074,
+          "utility": 0.234074,
+          "floor_violations": [],
+          "battery_drawn": 0.047189,
+          "battery": 0.1728,
+          "admissible_next_round": true,
+          "round_score": 0.234074,
+          "cumulative_score": 8.238485,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.387936,
+            "participants": 4
+          }
+        },
+        {
+          "round": 27,
+          "allocation": {
+            "compute": 0.8359,
+            "energy": 0.9249,
+            "security": 0.7382
+          },
+          "bid": {
+            "compute": 0.812266,
+            "energy": 8e-06,
+            "security": 0.000596
+          },
+          "spend": 0.81287,
+          "prices": {
+            "compute": 1.369303,
+            "energy": 0.787757,
+            "security": 1.034058
+          },
+          "capacities": {
+            "compute": 0.8359,
+            "energy": 0.9249,
+            "security": 0.7382
+          },
+          "utility_raw": 0.832418,
+          "utility": 0.832418,
+          "floor_violations": [],
+          "battery_drawn": 0.323562,
+          "battery": 0.0,
+          "admissible_next_round": false,
+          "round_score": 0.832418,
+          "cumulative_score": 9.070903,
+          "participated": true,
+          "swarm": {
+            "lsw": -0.18342,
+            "participants": 1
+          }
+        },
+        {
+          "round": 29,
+          "allocation": {
+            "compute": 0.350957,
+            "energy": 0.25,
+            "security": 0.226638
+          },
+          "bid": {
+            "compute": 0.39069,
+            "energy": 0.391847,
+            "security": 0.448114
+          },
+          "spend": 1.230651,
+          "prices": {
+            "compute": 0.913612,
+            "energy": 1.168712,
+            "security": 0.933592
+          },
+          "capacities": {
+            "compute": 1.2976,
+            "energy": 1.1155,
+            "security": 0.8748
+          },
+          "utility_raw": 0.265369,
+          "utility": 0.265369,
+          "floor_violations": [],
+          "battery_drawn": 0.090378,
+          "battery": 0.1296,
+          "admissible_next_round": true,
+          "round_score": 0.265369,
+          "cumulative_score": 9.336272,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.286151,
+            "participants": 4
+          }
+        },
+        {
+          "round": 30,
+          "allocation": {
+            "compute": 0.7782,
+            "energy": 0.761,
+            "security": 0.7881
+          },
+          "bid": {
+            "compute": 1.051891,
+            "energy": 1.1e-05,
+            "security": 0.000772
+          },
+          "spend": 1.052673,
+          "prices": {
+            "compute": 1.113213,
+            "energy": 1.567388,
+            "security": 1.977226
+          },
+          "capacities": {
+            "compute": 0.7782,
+            "energy": 0.761,
+            "security": 0.7881
+          },
+          "utility_raw": 0.775199,
+          "utility": 0.775199,
+          "floor_violations": [],
+          "battery_drawn": 0.266933,
+          "battery": 0.0,
+          "admissible_next_round": false,
+          "round_score": 0.775199,
+          "cumulative_score": 10.111471,
+          "participated": true,
+          "swarm": {
+            "lsw": -0.254636,
+            "participants": 1
+          }
+        },
+        {
+          "round": 32,
+          "allocation": {
+            "compute": 0.218466,
+            "energy": 0.072366,
+            "security": 0.408536
+          },
+          "bid": {
+            "compute": 0.393988,
+            "energy": 0.079301,
+            "security": 0.691976
+          },
+          "spend": 1.165264,
+          "prices": {
+            "compute": 0.925745,
+            "energy": 1.112807,
+            "security": 0.837979
+          },
+          "capacities": {
+            "compute": 0.7578,
+            "energy": 1.2019,
+            "security": 1.1674
+          },
+          "utility_raw": 0.206252,
+          "utility": 0.206252,
+          "floor_violations": [],
+          "battery_drawn": 0.029003,
+          "battery": 0.191,
+          "admissible_next_round": true,
+          "round_score": 0.206252,
+          "cumulative_score": 10.317722,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.454242,
+            "participants": 4
+          }
+        },
+        {
+          "round": 33,
+          "allocation": {
+            "compute": 0.8827,
+            "energy": 0.8934,
+            "security": 0.9929
+          },
+          "bid": {
+            "compute": 0.831974,
+            "energy": 0.050852,
+            "security": 0.018095
+          },
+          "spend": 0.900921,
+          "prices": {
+            "compute": 1.80343,
+            "energy": 1.095832,
+            "security": 1.693795
+          },
+          "capacities": {
+            "compute": 0.8827,
+            "energy": 0.8934,
+            "security": 0.9929
+          },
+          "utility_raw": 0.926006,
+          "utility": 0.926006,
+          "floor_violations": [],
+          "battery_drawn": 0.312679,
+          "battery": 0.0,
+          "admissible_next_round": false,
+          "round_score": 0.926006,
+          "cumulative_score": 11.243728,
+          "participated": true,
+          "swarm": {
+            "lsw": -0.076875,
+            "participants": 1
+          }
+        },
+        {
+          "round": 35,
+          "allocation": {
+            "compute": 0.287706,
+            "energy": 0.200422,
+            "security": 0.288309
+          },
+          "bid": {
+            "compute": 0.271806,
+            "energy": 0.398513,
+            "security": 0.37685
+          },
+          "spend": 1.04717,
+          "prices": {
+            "compute": 1.15178,
+            "energy": 1.662315,
+            "security": 1.400556
+          },
+          "capacities": {
+            "compute": 1.2695,
+            "energy": 0.7068,
+            "security": 1.2118
+          },
+          "utility_raw": 0.252862,
+          "utility": 0.252862,
+          "floor_violations": [],
+          "battery_drawn": 0.073248,
+          "battery": 0.1468,
+          "admissible_next_round": true,
+          "round_score": 0.252862,
+          "cumulative_score": 11.49659,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.494933,
+            "participants": 4
+          }
+        },
+        {
+          "round": 36,
+          "allocation": {
+            "compute": 0.38362,
+            "energy": 0.085,
+            "security": 0.335508
+          },
+          "bid": {
+            "compute": 0.382174,
+            "energy": 0.076083,
+            "security": 0.489311
+          },
+          "spend": 0.947568,
+          "prices": {
+            "compute": 0.944738,
+            "energy": 1.988374,
+            "security": 1.307107
+          },
+          "capacities": {
+            "compute": 1.2479,
+            "energy": 1.1659,
+            "security": 1.0309
+          },
+          "utility_raw": 0.230558,
+          "utility": 0.230558,
+          "floor_violations": [],
+          "battery_drawn": 0.033368,
+          "battery": 0.1134,
+          "admissible_next_round": true,
+          "round_score": 0.230558,
+          "cumulative_score": 11.727148,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.160106,
+            "participants": 4
+          }
+        },
+        {
+          "round": 37,
+          "allocation": {
+            "compute": 0.9978,
+            "energy": 0.9552,
+            "security": 1.2251
+          },
+          "bid": {
+            "compute": 1.065771,
+            "energy": 1.1e-05,
+            "security": 0.000782
+          },
+          "spend": 1.066564,
+          "prices": {
+            "compute": 0.996232,
+            "energy": 0.895095,
+            "security": 1.458418
+          },
+          "capacities": {
+            "compute": 0.9978,
+            "energy": 0.9552,
+            "security": 1.2251
+          },
+          "utility_raw": 1.060463,
+          "utility": 1.060463,
+          "floor_violations": [],
+          "battery_drawn": 0.334031,
+          "battery": 0.0,
+          "admissible_next_round": false,
+          "round_score": 1.060463,
+          "cumulative_score": 12.787611,
+          "participated": true,
+          "swarm": {
+            "lsw": 0.058705,
+            "participants": 1
+          }
+        },
+        {
+          "round": 39,
+          "allocation": {
+            "compute": 0.145287,
+            "energy": 0.364358,
+            "security": 0.187897
+          },
+          "bid": {
+            "compute": 0.098835,
+            "energy": 0.497738,
+            "security": 0.154052
+          },
+          "spend": 0.750625,
+          "prices": {
+            "compute": 0.759783,
+            "energy": 1.49641,
+            "security": 1.066968
+          },
+          "capacities": {
+            "compute": 1.1172,
+            "energy": 0.8982,
+            "security": 1.2386
+          },
+          "utility_raw": 0.234939,
+          "utility": 0.234939,
+          "floor_violations": [],
+          "battery_drawn": 0.129889,
+          "battery": 0.0901,
+          "admissible_next_round": true,
+          "round_score": 0.234939,
+          "cumulative_score": 13.02255,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.369955,
+            "participants": 4
+          }
+        },
+        {
+          "round": 40,
+          "allocation": {
+            "compute": 0.238483,
+            "energy": 0.103904,
+            "security": 0.309302
+          },
+          "bid": {
+            "compute": 0.298326,
+            "energy": 0.105271,
+            "security": 0.453568
+          },
+          "spend": 0.857164,
+          "prices": {
+            "compute": 0.680273,
+            "energy": 1.366069,
+            "security": 0.819874
+          },
+          "capacities": {
+            "compute": 0.8421,
+            "energy": 0.9432,
+            "security": 0.9681
+          },
+          "utility_raw": 0.20229,
+          "utility": 0.20229,
+          "floor_violations": [],
+          "battery_drawn": 0.0399,
+          "battery": 0.0502,
+          "admissible_next_round": true,
+          "round_score": 0.20229,
+          "cumulative_score": 13.22484,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.932829,
+            "participants": 4
+          }
+        },
+        {
+          "round": 41,
+          "allocation": {
+            "compute": 1.0016,
+            "energy": 1.1725,
+            "security": 0.9045
+          },
+          "bid": {
+            "compute": 0.911785,
+            "energy": 9e-06,
+            "security": 0.000669
+          },
+          "spend": 0.912463,
+          "prices": {
+            "compute": 1.250928,
+            "energy": 1.013151,
+            "security": 1.466424
+          },
+          "capacities": {
+            "compute": 1.0016,
+            "energy": 1.1725,
+            "security": 0.9045
+          },
+          "utility_raw": 1.028152,
+          "utility": 1.028152,
+          "floor_violations": [],
+          "battery_drawn": 0.40911,
+          "battery": 0.0,
+          "admissible_next_round": false,
+          "round_score": 1.028152,
+          "cumulative_score": 14.252993,
+          "participated": true,
+          "swarm": {
+            "lsw": 0.027763,
+            "participants": 1
+          }
+        },
+        {
+          "round": 43,
+          "allocation": {
+            "compute": 0.384889,
+            "energy": 0.03,
+            "security": 0.38182
+          },
+          "bid": {
+            "compute": 0.419919,
+            "energy": 0.034099,
+            "security": 0.581822
+          },
+          "spend": 1.03584,
+          "prices": {
+            "compute": 1.10751,
+            "energy": 1.391816,
+            "security": 1.207621
+          },
+          "capacities": {
+            "compute": 1.1698,
+            "energy": 0.9984,
+            "security": 1.1368
+          },
+          "utility_raw": 0.201988,
+          "utility": 0.201988,
+          "floor_violations": [],
+          "battery_drawn": 0.014365,
+          "battery": 0.2056,
+          "admissible_next_round": true,
+          "round_score": 0.201988,
+          "cumulative_score": 14.454981,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.421914,
+            "participants": 4
+          }
+        },
+        {
+          "round": 44,
+          "allocation": {
+            "compute": 0.9486,
+            "energy": 0.9171,
+            "security": 1.107
+          },
+          "bid": {
+            "compute": 0.797823,
+            "energy": 8e-06,
+            "security": 0.000585
+          },
+          "spend": 0.798416,
+          "prices": {
+            "compute": 1.091011,
+            "energy": 1.136642,
+            "security": 1.523813
+          },
+          "capacities": {
+            "compute": 0.9486,
+            "energy": 0.9171,
+            "security": 1.107
+          },
+          "utility_raw": 0.992152,
+          "utility": 0.992152,
+          "floor_violations": [],
+          "battery_drawn": 0.320867,
+          "battery": 0.0,
+          "admissible_next_round": false,
+          "round_score": 0.992152,
+          "cumulative_score": 15.447132,
+          "participated": true,
+          "swarm": {
+            "lsw": -0.007879,
+            "participants": 1
+          }
+        },
+        {
+          "round": 46,
+          "allocation": {
+            "compute": 0.372825,
+            "energy": 0.18,
+            "security": 0.286564
+          },
+          "bid": {
+            "compute": 0.358435,
+            "energy": 0.194717,
+            "security": 0.437779
+          },
+          "spend": 0.990931,
+          "prices": {
+            "compute": 0.933813,
+            "energy": 1.29687,
+            "security": 1.153976
+          },
+          "capacities": {
+            "compute": 1.2602,
+            "energy": 1.2048,
+            "security": 0.9484
+          },
+          "utility_raw": 0.26263,
+          "utility": 0.26263,
+          "floor_violations": [],
+          "battery_drawn": 0.066192,
+          "battery": 0.1538,
+          "admissible_next_round": true,
+          "round_score": 0.26263,
+          "cumulative_score": 15.709763,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.123761,
+            "participants": 4
+          }
+        },
+        {
+          "round": 47,
+          "allocation": {
+            "compute": 0.95,
+            "energy": 0.8196,
+            "security": 0.942
+          },
+          "bid": {
+            "compute": 0.722015,
+            "energy": 0.039827,
+            "security": 0.196636
+          },
+          "spend": 0.958479,
+          "prices": {
+            "compute": 0.961404,
+            "energy": 1.081762,
+            "security": 1.527684
+          },
+          "capacities": {
+            "compute": 0.95,
+            "energy": 0.8196,
+            "security": 0.942
+          },
+          "utility_raw": 0.896453,
+          "utility": 0.896453,
+          "floor_violations": [],
+          "battery_drawn": 0.28718,
+          "battery": 0.0,
+          "admissible_next_round": false,
+          "round_score": 0.896453,
+          "cumulative_score": 16.606215,
+          "participated": true,
+          "swarm": {
+            "lsw": -0.10931,
+            "participants": 1
+          }
+        },
+        {
+          "round": 49,
+          "allocation": {
+            "compute": 0.228431,
+            "energy": 0.18,
+            "security": 0.289775
+          },
+          "bid": {
+            "compute": 0.331325,
+            "energy": 0.343698,
+            "security": 0.519702
+          },
+          "spend": 1.194724,
+          "prices": {
+            "compute": 0.770288,
+            "energy": 1.929271,
+            "security": 0.816351
+          },
+          "capacities": {
+            "compute": 0.9214,
+            "energy": 0.7353,
+            "security": 1.1366
+          },
+          "utility_raw": 0.229812,
+          "utility": 0.229812,
+          "floor_violations": [],
+          "battery_drawn": 0.066192,
+          "battery": 0.1538,
+          "admissible_next_round": true,
+          "round_score": 0.229812,
+          "cumulative_score": 16.836027,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.92525,
+            "participants": 4
+          }
+        },
+        {
+          "round": 50,
+          "allocation": {
+            "compute": 0.221038,
+            "energy": 0.28827,
+            "security": 0.292051
+          },
+          "bid": {
+            "compute": 0.216443,
+            "energy": 0.324441,
+            "security": 0.33381
+          },
+          "spend": 0.874694,
+          "prices": {
+            "compute": 1.450438,
+            "energy": 1.909433,
+            "security": 1.793468
+          },
+          "capacities": {
+            "compute": 0.9639,
+            "energy": 1.1491,
+            "security": 1.1038
+          },
+          "utility_raw": 0.271421,
+          "utility": 0.271421,
+          "floor_violations": [],
+          "battery_drawn": 0.1036,
+          "battery": 0.0502,
+          "admissible_next_round": true,
+          "round_score": 0.271421,
+          "cumulative_score": 17.107448,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.230428,
+            "participants": 4
+          }
+        },
+        {
+          "round": 51,
+          "allocation": {
+            "compute": 1.1932,
+            "energy": 1.2137,
+            "security": 1.113
+          },
+          "bid": {
+            "compute": 0.995297,
+            "energy": 1e-05,
+            "security": 0.00073
+          },
+          "spend": 0.996037,
+          "prices": {
+            "compute": 0.979213,
+            "energy": 1.125477,
+            "security": 1.142986
+          },
+          "capacities": {
+            "compute": 1.1932,
+            "energy": 1.2137,
+            "security": 1.113
+          },
+          "utility_raw": 1.171517,
+          "utility": 1.171517,
+          "floor_violations": [],
+          "battery_drawn": 0.423345,
+          "battery": 0.0,
+          "admissible_next_round": false,
+          "round_score": 1.171517,
+          "cumulative_score": 18.278965,
+          "participated": true,
+          "swarm": {
+            "lsw": 0.158299,
+            "participants": 1
+          }
+        },
+        {
+          "round": 53,
+          "allocation": {
+            "compute": 0.285726,
+            "energy": 0.18,
+            "security": 0.224573
+          },
+          "bid": {
+            "compute": 0.362581,
+            "energy": 0.272722,
+            "security": 0.459034
+          },
+          "spend": 1.094337,
+          "prices": {
+            "compute": 1.305924,
+            "energy": 0.962094,
+            "security": 0.863247
+          },
+          "capacities": {
+            "compute": 0.9617,
+            "energy": 1.0238,
+            "security": 0.7856
+          },
+          "utility_raw": 0.221502,
+          "utility": 0.221502,
+          "floor_violations": [],
+          "battery_drawn": 0.066192,
+          "battery": 0.1538,
+          "admissible_next_round": true,
+          "round_score": 0.221502,
+          "cumulative_score": 18.500467,
+          "participated": true,
+          "swarm": {
+            "lsw": -5.918945,
+            "participants": 4
+          }
+        },
+        {
+          "round": 54,
+          "allocation": {
+            "compute": 1.0358,
+            "energy": 1.0705,
+            "security": 1.2334
+          },
+          "bid": {
+            "compute": 1.029437,
+            "energy": 1e-05,
+            "security": 0.000755
+          },
+          "spend": 1.030203,
+          "prices": {
+            "compute": 1.268981,
+            "energy": 1.51512,
+            "security": 2.044029
+          },
+          "capacities": {
+            "compute": 1.0358,
+            "energy": 1.0705,
+            "security": 1.2334
+          },
+          "utility_raw": 1.118921,
+          "utility": 1.118921,
+          "floor_violations": [],
+          "battery_drawn": 0.373868,
+          "battery": 0.0,
+          "admissible_next_round": false,
+          "round_score": 1.118921,
+          "cumulative_score": 19.619388,
+          "participated": true,
+          "swarm": {
+            "lsw": 0.112365,
+            "participants": 1
+          }
+        },
+        {
+          "round": 56,
+          "allocation": {
+            "compute": 0.353753,
+            "energy": 0.125,
+            "security": 0.392479
+          },
+          "bid": {
+            "compute": 0.438204,
+            "energy": 0.147988,
+            "security": 0.617336
+          },
+          "spend": 1.203528,
+          "prices": {
+            "compute": 0.728833,
+            "energy": 1.687122,
+            "security": 1.159393
+          },
+          "capacities": {
+            "compute": 1.2426,
+            "energy": 1.1332,
+            "security": 1.2291
+          },
+          "utility_raw": 0.264729,
+          "utility": 0.264729,
+          "floor_violations": [],
+          "battery_drawn": 0.047189,
+          "battery": 0.1728,
+          "admissible_next_round": true,
+          "round_score": 0.264729,
+          "cumulative_score": 19.884117,
+          "participated": true,
+          "swarm": {
+            "lsw": -4.904161,
+            "participants": 4
+          }
+        },
+        {
+          "round": 57,
+          "allocation": {
+            "compute": 0.9692,
+            "energy": 0.7892,
+            "security": 1.2283
+          },
+          "bid": {
+            "compute": 1.1683,
+            "energy": 1.2e-05,
+            "security": 0.025751
+          },
+          "spend": 1.194063,
+          "prices": {
+            "compute": 1.238728,
+            "energy": 1.183903,
+            "security": 1.572915
+          },
+          "capacities": {
+            "compute": 0.9692,
+            "energy": 0.7892,
+            "security": 1.2283
+          },
+          "utility_raw": 0.985571,
+          "utility": 0.985571,
+          "floor_violations": [],
+          "battery_drawn": 0.276676,
+          "battery": 0.0,
+          "admissible_next_round": false,
+          "round_score": 0.985571,
+          "cumulative_score": 20.869689,
+          "participated": true,
+          "swarm": {
+            "lsw": -0.014534,
+            "participants": 1
+          }
+        }
+      ]
+    },
+    "expected_bid": {
+      "compute": 0.7676780935285354,
+      "energy": 7.68e-06,
+      "security": 0.0005632264714645618
+    }
+  }
+]

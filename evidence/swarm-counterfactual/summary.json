@@ -1,0 +1,22 @@
+{
+  "engine": "in-process-no-faults",
+  "seeds": 1000,
+  "seed_range": [
+    20001,
+    21000
+  ],
+  "input_sha256": "764dcee7bc065f26afa930baa480bcff384e9608e5cbfd53cb80fb2500344654",
+  "mean": {
+    "lookahead_neighbors_score": 38.0286334,
+    "lookahead_lsw_total": -199.012207652,
+    "cycle_aware_neighbors_score": 37.9692727,
+    "cycle_aware_lsw_total": -199.085718138,
+    "bots_only_score": 59.8757687,
+    "bots_only_lsw": -75.542405568,
+    "lookahead_neighbors_delta_vs_absent": -21.8471353,
+    "lookahead_lsw_delta_vs_absent": -123.469802084,
+    "cycle_aware_neighbors_delta_vs_absent": -21.906496,
+    "cycle_aware_lsw_delta_vs_absent": -123.54331257
+  },
+  "note": "Three original bots retain identical seeded devices/capacities/wallets. Their price and battery paths change when a fourth bidder participates. LSW sums logs over participating nodes, so differing participant populations limit welfare interpretation."
+}

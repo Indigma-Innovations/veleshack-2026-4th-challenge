@@ -1,14 +1,14 @@
 """
 The agent main loop.
 
-THIS FILE IS GIVEN TO YOU AND IT WORKS. Out of the box it registers, keeps its
-lease alive, submits a bid every round, reads back the result, and survives the
-faults the graded arena throws at it.
-
-You are not expected to change it. The challenge lives in strategy.py.
+Lifecycle and HTTP behavior are supplied by the organisers. CardanoEdge adds
+a small feedback correction: collect the preceding settled result after
+bidding, rather than repeatedly asking for the current unsettled result.
+The bidding policies live in strategy.py. Public-state planners use a separate
+background observer; unavailable or stale observations use a guarded Kelly fallback.
 
 Run it:
-    ARENA_URL=http://localhost:8080 TEAM_NAME=team-kappa python agent.py
+    ARENA_URL=http://localhost:8080 TEAM_NAME=CardanoEdge python agent.py
 
 Copyright 2026 The CoGNETs Consortium
 SPDX-License-Identifier: Apache-2.0
@@ -86,6 +86,9 @@ def run() -> int:
         target=heartbeat_loop, args=(client, max(1.0, lease / 3.0)), daemon=True
     )
     hb.start()
+    from observations import PublicObserver
+    observer = PublicObserver(ARENA_URL, TEAM_NAME, _stop)
+    threading.Thread(target=observer.run, daemon=True, name="public-observer").start()
 
     history: List[Dict[str, Any]] = []
     last_bid_round = 0
@@ -135,9 +138,11 @@ def run() -> int:
         # bookkeeping; missing the bidding window is a lost round. Never put
         # anything that can block in front of the bid.
         if round_index <= last_bid_round or rnd.get("settled"):
-            _collect_result(client, history, last_bid_round, last_result_round)
-            last_result_round = max(last_result_round,
-                                    _last_collected(history, last_result_round))
+            # Open rounds transition immediately. The preceding result is the
+            # settled one; the current result does not exist yet.
+            last_result_round = _collect_result(
+                client, history, round_index - 1, last_result_round
+            )
             _stop.wait(min(0.3, max(0.05, float(rnd.get("seconds_remaining", 0.3)))))
             continue
 
@@ -154,6 +159,8 @@ def run() -> int:
 
         # ------------------------------------------------------------- decide
         budget = float(rnd.get("budget", 0.0))
+        if observer is not None:
+            client.profile["_market"] = observer.snapshot(round_index, total_rounds)
         try:
             bid = decide_bid(
                 budget=budget,
@@ -195,6 +202,12 @@ def run() -> int:
         except ArenaClientError as exc:
             LOG.warning("round %d: bid failed: %s", round_index, exc)
 
+        # Keep feedback off the bid's critical path. Reading round t-1 after
+        # bidding on t makes that feedback available for the decision on t+1.
+        last_result_round = _collect_result(
+            client, history, round_index - 1, last_result_round
+        )
+
         # ------------------------------------------------------------- finish
         if total_rounds and round_index >= total_rounds:
             LOG.info("final round submitted; waiting for it to settle")
@@ -223,18 +236,18 @@ def run() -> int:
 # Helpers
 # ---------------------------------------------------------------------------
 def _collect_result(client: ArenaClient, history: List[Dict[str, Any]],
-                    last_bid_round: int, last_result_round: int) -> None:
-    """Pull the last settled result into history. Best-effort, never blocking."""
+                    last_bid_round: int, last_result_round: int) -> int:
+    """Read a settled result after bidding; return the last processed round."""
     if last_result_round >= last_bid_round or last_bid_round == 0:
-        return
+        return last_result_round
     try:
         result = client.get_result(last_bid_round)
     except (NoRound, ArenaClientError):
-        return
+        return last_result_round
     if not result.get("participated"):
-        return
+        return last_bid_round
     if history and history[-1].get("round") == result.get("round"):
-        return
+        return last_bid_round
     history.append(result)
     LOG.info(
         "round %d  spend=%.3f  alloc=%s  utility=%.4f%s  battery=%.2f  total=%.3f",
@@ -246,10 +259,7 @@ def _collect_result(client: ArenaClient, history: List[Dict[str, Any]],
         result.get("battery", 0.0),
         result.get("cumulative_score", 0.0),
     )
-
-
-def _last_collected(history: List[Dict[str, Any]], fallback: int) -> int:
-    return int(history[-1]["round"]) if history else fallback
+    return last_bid_round
 
 
 def _sanitise(bid: Any, budget: float) -> Dict[str, float]:

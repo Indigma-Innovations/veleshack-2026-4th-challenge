@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "description": "Exact bid equality against measured cycle-aware and lookahead code, fallback equality, and archived final-score equality.",
+  "seeds": [
+    20001,
+    20033,
+    20564,
+    20885,
+    20989
+  ],
+  "checks": 707,
+  "elapsed_seconds": 66.43458979995921,
+  "release_sha256": {
+    "agent.py": "892d04fc26538503a71d7bf48582893d9dd4de87cd575a3c70cde79055680003",
+    "client.py": "253430b9e65272f4286e4a3e4ca5547f55ef744b9f850e38edd4b887643848d7",
+    "observations.py": "c89865765b3a7af91ec6a98f9cf729bb0d34b116d51c0fd0cc89998e9a2a7036",
+    "planner.py": "3d9eb54768be06f8581b8c3595e277d25ef72f92041beff28c2030007539a15a",
+    "runner.py": "7e89c4894882247fa8de549a92a058d8a71a4d9595d83b159babe4ed8f40538d",
+    "strategy.py": "f220f6f4e5239e8e2d9bd38c6a8dc7670fa14fe29641898d945f2de4a43029d9"
+  }
+}

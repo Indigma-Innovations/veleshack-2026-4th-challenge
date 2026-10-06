@@ -1,230 +1,91 @@
-# CoGNETs Swarm Arena
+# CardanoEdge - Cycle-Aware Planner
 
-The environment for the VelesHack 2026 challenge **“Dynamic Node Registration
-and Auction-Based Resource Allocation in an Edge Computing Environment”**.
+**TEAM_NAME:** `CardanoEdge`.
+**Members:** Vasilis Perifanis, Nikolaos Pavlidis.
 
-You write one container: an agent that joins a decentralised edge swarm,
-survives in it, and competes each round for shares of three scarce resource
-pools under a budget. Everything else here is provided, runs on your laptop,
-and is open source so you can read exactly how you are being scored.
+The agent runs **Cycle-Aware  Planner** with a guarded market-estimation fallback. The organizer arena, baselines, HTTP client, conformance suite and Dockerfile are retained unchanged. The measured **Lookahead Planner** comparator lives in `experiments/`, outside the agent image. Development variants and fitted models are excluded.
+
+## Run with Docker
+
+### Ubuntu
+
+To run the agent:
 
 ```bash
-git clone https://github.com/czavitsanos-iti/veleshack-2026-4th-challenge
+git clone https://github.com/Indigma-Innovations/veleshack-2026-4th-challenge
 cd veleshack-2026-4th-challenge
 cp .env.example .env
-sed -i 's/^TEAM_NAME=.*/TEAM_NAME=team-example/' .env   # use your own team name
-grep TEAM_NAME .env                                     # check it took
-make up                                                 # arena + three bots -> localhost:8080
-make agent                                              # you, now on the leaderboard and losing
+grep TEAM_NAME .env 
+make up
+make agent
 ```
 
-Then edit **one file** — `agent-template/strategy.py` — and beat the bots.
+### Windows (PowerShell)
 
----
+Start Docker Desktop and use Linux containers. After cloning the repository,
+open PowerShell in the project folder and run:
 
-## Read these, in this order
+```powershell
+$env:TEAM_NAME = "CardanoEdge"
+$env:SCENARIO = "graded"
+$env:ARENA_SEED = "16001"
+$env:ARENA_PORT = "8080"
 
-| | |
-|---|---|
-| **[docs/quickstart.md](docs/quickstart.md)** | get running, and the fixes for the five things that go wrong |
-| **[docs/strategy-primer.md](docs/strategy-primer.md)** | **the important one.** Where the wins actually are |
-| **[docs/api.md](docs/api.md)** | every endpoint, every status code |
-| **[docs/cognets-mapping.md](docs/cognets-mapping.md)** | what this is a reduction of, and what was left out |
-
-Interactive API docs are served at `localhost:8080/docs` once the arena is up.
-
----
-
-## The game in one screen
-
-Each round the arena publishes the pool sizes `C_k`, the prices that cleared
-last round `λ_k`, and your budget `W`. You submit a bid:
-
-```
-{ "compute": b_C, "energy": b_E, "security": b_S }      with   Σ b ≤ W
+docker compose --profile agent down --remove-orphans
+docker compose --profile agent build
+docker compose --profile agent up -d
+docker compose logs -f agent
 ```
 
-Pools are shared out in proportion to bids, and your payoff is a CES utility
-over what you won:
+These environment settings apply to the current PowerShell session and take
+precedence over `.env`. No `make`, `cp` or `grep` is required. The first command
+removes this project's previous containers for a fresh run; building all images
+before starting keeps image-build time outside the arena's registration window.
+The `agent` profile starts Cycle-Aware Planner alongside the arena and all three
+baseline bots.
 
-```
-x_k = C_k · b_k / Σ_j b_j          u = ( Σ_k w_k · x_k^0.5 ) ^ 2
-```
 
-Three things make that harder than it looks:
+Open the leaderboard at **[http://localhost:8080/](http://localhost:8080/)**.
+The graded run has 60 four-second rounds and takes about four minutes.
+Seed `16001` is a local rehearsal seed; organizers supply the grading seed.
 
-- **Two service floors.** Miss your minimum compute or security share and the
-  round's utility is halved. Miss both and it is quartered.
-- **Energy is not free.** The energy share you *win* drains your own battery.
-  Flatten it and your node sits whole rounds out, scoring nothing.
-- **The swarm does not sit still.** Leases expire, capacity moves, and the
-  graded arena returns `503`s and adds latency.
+Press **Ctrl+C** to stop following logs. Containers continue running, keeping the
+leaderboard available. To stop the containers:
 
-Your score is the sum of your per-round utility. The bar is to finish ahead of
-all three baseline bots.
-
----
-
-## What you are up against
-
-| Bot | What it does | Why it is here |
-|---|---|---|
-| `naive-max` | spends everything, split by its weights | the floor. Also what the template ships with |
-| `even-split` | one third on each pool | a control, and stubborner than it looks |
-| `proportional` | leans toward big/cheap pools and buys its service floors | the most sophisticated of the three, and barely ahead |
-
-None of them knows that the energy it wins drains its own battery. That
-omission is deliberate — it is the largest single source of score in the
-challenge, and a bot that already knew it would mean you scored nothing for
-working it out.
-
-How much it costs them is worth knowing before you start. Over 30 runs, all
-three bots spend **roughly a third of the run** flat on their backs, scoring
-nothing; the organisers' reference agent spends three rounds. Reading the
-market carefully, as `proportional` does, is worth about 1.5% over spending
-blindly. The battery is worth an order of magnitude more than that.
-
-All three are in `baselines/bot.py`. Read them.
-
----
-
-## Commands
-
-| | |
-|---|---|
-| `make up` | arena + the three bots |
-| `make agent` | build and run your agent |
-| `make graded` | restart on the hostile scenario you are scored on |
-| `make check` | **the conformance suite the organisers run.** Run it before submitting |
-| `make check-docker IMAGE=...` | the same suite against your built image |
-| `make board` / `make status` | the standings / the run state |
-| `make down` / `make reset` | stop / wipe and restart |
-
-`make help` lists everything.
-
-No Docker on your laptop? `pip install -e . && python -m arena` is a fully
-supported path — see the quickstart.
-
----
-
-## Layout
-
-```
-arena/              the environment: registry, auctioneer, scorer, leaderboard
-  game.py             Kelly allocation, CES utility, floors, prices, LSW
-  state.py            nodes, leases, rounds, battery, scoring
-  scenarios/          practice.yaml and graded.yaml
-agent-template/     your agent
-  strategy.py         <- the only file you must change
-  agent.py            the main loop. Works already. Read it, don't rewrite it
-  client.py           HTTP client with retry/backoff. Works already
-baselines/          the three bots
-tests/              the conformance suite the organisers grade with
-docs/               quickstart, strategy primer, API, CoGNETs mapping
+```powershell
+docker compose --profile agent down
 ```
 
----
+To replay from round one, rerun the Windows command block above. Change
+`ARENA_PORT` if port 8080 is occupied, then open the matching localhost port.
 
-## Evaluation
+## Organizer handoff
 
-Graded after the hacking window, in a fresh arena alongside the same three
-bots, over **four runs on four seeds that are not published in advance**. One
-run is too short to separate a good idea from a good draw, so every number
-below is pooled across all four.
+- [x] Team name: `CardanoEdge`.
+- [x] Dockerfile: [`agent-template/Dockerfile`](agent-template/Dockerfile).
+  Build from the repository root:
+  `docker build -t cardanoedge:release agent-template`.
+- [x] README strategy write-up and both team members, below.
+- [ ] Three-minute video or confirmation of a live pitch: deferred until the
+  team verifies the release. No video or live-pitch commitment is included.
+- [x] Optional best retained normal graded run (fresh release verification):
+  [`results.json`](evidence/best-run/results.json) and
+  [leaderboard screenshot](evidence/figures/leaderboard.png), a labeled replay
+  of its final-settlement state.
 
-| Criterion | Pts | What we check |
-|---|--:|---|
-| Functional core | 30 | Builds from a clean clone; registers, heartbeats and bids validly in ≥95% of the rounds you are admissible for; completes the run |
-| Resilience | 20 | Survives injected 503/429, latency, lease expiry and battery outage. Retries with backoff |
-| Strategy | 25 | Cumulative score, scaled from the template's strategy up to our reference agent |
-| Engineering | 15 | Env-var config, no hardcoded URLs or secrets, readable code, useful logs, accurate README |
-| Insight & pitch | 10 | What you tried, what you measured, what you learned. Honest negative results count, and so does measuring your effect on the rest of the swarm |
+## Strategy write-up
 
-**How the strategy points work.** Let `S` be your cumulative score, `T` the
-score of the strategy the template ships with, and `R` the score of the
-organisers' reference agent:
+We treated energy as battery expenditure and not as a resource to maximize.  The Cycle-Aware Planner predicts the published baseline bots from public swarm  profiles, evaluates a six-round horizon over three independent hypothetical  futures, and optimizes compute/security bids around service floors. It adds  energy bids near our own and opponents' next-round battery cutoffs, then  re-evaluates the three strongest current bids with a causal two-round  continuation. This strategy exploits when nodes must rest without reading future arena  draws, submitted opponent bids, or the grading seed. Nothing is trained.
 
-```
-strategy_points = 25 · clip( (S − T) / (R − T), 0, 1 )
-```
+A separate observer caches current-round public state. Missing or stale state uses a guarded Kelly response estimated from our own awarded shares. Heartbeats, sanitized bids and the organizer's retry/backoff client keep the operational  path independent of planning.
 
-Change nothing and you score 0. Match the reference and you get all 25.
-Everything in between earns partial credit, so an improvement that does not
-quite beat every bot is still worth points. You are not competing against the
-other teams for these — every team that reaches the reference gets all of them.
+Battery tapering raised mean score from 13.51 to 16.83 on 100 paired seeds.  Guarded Kelly scored 16.82, i.e. more immediate optimization did not materially beat simple battery control. Lookahead then beat Guarded Kelly on 98/100 separate paired seeds. On 1.000 paired seeds, Cycle-Aware averaged 19.063 versus Lookahead's 18.849, won 620/1.000 comparisons, and beat every bot in 999/1.000 runs. Its mean per-seed gain was 1.390% compared to LookAhead, with a bootstrap 95% interval of 0.980-1.811%.
 
-`T` and `R` are not other agents standing in the arena next to you. They are
-**counterfactuals**: after your run, we replay the same seed, the same three
-bots and *your own device* twice more, once with the template's strategy in
-your place and once with the reference agent. So the two numbers your score is
-measured against answer one question — what would those strategies have scored
-on your machine, in your market? — and nothing about them depends on your
-device draw, on the fault dice, or on how you happened to bid. They can be
-recomputed from the seed alone, which is how we answer a query about a score.
+The main cost is latency. Serial mean decisions were 99 versus 29 ms. Both passed normal HTTP core checks in 4/4 trials and recovered real lease expiry in 2/2. Higher stress exposed more missed bids for Cycle-Aware. Relative to Lookahead, neighbors' score and log social welfare declined slightly. We therefore report an own-score improvement, operational limits and swarm costs. A same-seed bot-only counterfactual also showed that adding our bidder reduced neighbors' combined score from 59.876 to 37.969.
 
-Two consequences worth knowing:
+## Evidence and verification
 
-- A run where the reference fails to beat the template is a bad *seed*, not a
-  bad team. Those runs are dropped, and the remaining ones carry the score.
-- Rounds you lose to injected faults cost you resilience points, not strategy
-  points, and the bots are never faulted — so the market is the same in all
-  three runs.
+Read [evaluation](docs/evaluation.md) for seed cohorts, selected experiments, score/win tables, HTTP faults, lease recovery and latency. Read
+[methodology](docs/methodology.md) for exact inputs, equations, candidate search,  continuation and fallback. The [comparison figure](evidence/figures/paired-scores.png) and [paired CSV](evidence/paired-scores.csv) retain all 1,000 final comparisons. Evidence is historical unless explicitly marked as release verification.
 
-Rounds you spend resting on a flat battery are **not** counted against your
-functional score. They cost you score instead, which is the point.
-
-Ties are broken by the strategy score, then by submission time. The most
-interesting analysis will not always come from the top of the leaderboard, which
-is what the ten **Insight & pitch** points are there for.
-
-**A question worth answering in your write-up.** The arena reports the swarm's
-log social welfare every round, `Σ_i log(u_i)`, and shows every node's score on
-the leaderboard. Did your strategy make the swarm better off, or did it take
-from its neighbours? Measure it and say so. That analysis counts under Insight.
-
----
-
-## Submission
-
-On [taikai.network](https://taikai.network/), before the deadline announced at
-kick-off:
-
-- [ ] A link to a public Git repository — your fork of this one, with your work
-      committed
-- [ ] Your `TEAM_NAME`, exactly as you used it all weekend. It decides your device
-      profile, so the graded run has to use the same one
-- [ ] The path to your Dockerfile, normally `agent-template/Dockerfile`, and the
-      build command if it is not a plain `docker build .`
-- [ ] Your README, with the 300-word strategy write-up and all team members named.
-      What you tried, what you measured, what did not work — `docs/strategy-primer.md`
-      section 8 says what earns the Insight marks
-- [ ] A presentation of your work using the 3 slides template that the organizers shared.
-- [ ] Optionally, a screenshot or `results.json` from your best local run
-- [ ] Confirmation that you will pitch live if you are picked for the final selection.
-
-Before you submit, check the boring things — this is where strong teams lose
-points. Your repository must clone and build on a machine that has never seen
-your laptop: no `.env` committed, no absolute paths, every dependency you
-installed by hand actually in `requirements.txt`. Run `make check` first.
-
----
-
-## Rules worth knowing before you start
-
-- **Reading the arena source is encouraged, not cheating.** It ships with the
-  challenge on purpose. What will not work is hardcoding outcomes: the graded
-  run uses a seed that is not published in advance.
-- **Any language is fine** if the deliverable is a Docker image. Only Python is
-  supported by the template and the mentor.
-- One agent per team, one registration per agent. Farming resources under
-  several names is detected and disqualifies the run.
-- Malformed, negative or over-budget bids raise your compromise score κ. Twelve
-  of them and you are ejected for the rest of the run. Validate before you send.
-
----
-
-## Licence
-
-Apache-2.0. See [LICENSE](LICENSE).
-
-Copyright 2026 The CoGNETs Consortium.
+See [local development](docs/local-development.md) for native setup, a fresh graded run and verification commands. [Release validation](docs/release-validation.md) records the checks on this branch. The original organizer introduction is preserved in [organizer guide](docs/organizer-guide.md); its broader quickstart, API and strategy primer remain in `docs/`.

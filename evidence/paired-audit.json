@@ -1,0 +1,27 @@
+{
+  "source_sha256": {
+    "agent-template/strategy.py": "339a2d5cc86978ad836f1cad3754a2e05d144bd4449bfa7d6c33523f346f8685",
+    "agent-template/planner.py": "c26628443566742938243d2858008ad35cb258317f14c833a0176fbee4305e74",
+    "arena/state.py": "8e5d1745be86d21389f3e2a81c4f4d0092a275c78f8f8d7f26b8094283ff777f",
+    "arena/game.py": "2e716772b3c6f0b32df678b26747b939813ca9537eca33cd09c112dd4c144524",
+    "arena/config.py": "08472ba3c89662c361c4a803b24eaec801f1a1f71bf7f1a724d98452bb889788",
+    "arena/scenarios/graded.yaml": "f16f67a4faf0bbd5cf5837f45845649dc315b608843ba7b3c0f55c8d2685a38c",
+    "baselines/bot.py": "23a42afd6b795af6690a8d8e2515d0729690b5f2cca2bdb41938b1cc6b7f3748",
+    "experiments/run.py": "054d11f872645953c1e13ab7d0603eeaeb87b5eae9dad91aa304ee8b33d1d655"
+  },
+  "git_revision": "28285dfd8a25d8e783c2ca6a5590b71b6acd7133",
+  "logical_cpu_count": 16,
+  "platform": "Windows-11-10.0.26200-SP0",
+  "audit_recorded_at_utc": "2026-10-06T11:15:42.406511+00:00",
+  "analysis_plan": {
+    "primary": "1000 paired seeds, Lookahead Planner versus frozen Cycle-Aware Planner",
+    "seed_range": [
+      20001,
+      21000
+    ],
+    "four_run_groups": "250 consecutive disjoint quartets in sorted seed order",
+    "subgroups": "energy weight <0.20 / 0.20-0.30 / >=0.30; mobility <0.15 / 0.15-0.30 / >=0.30",
+    "bootstrap_replicates": 10000,
+    "bootstrap_rng_seed": 612101
+  }
+}

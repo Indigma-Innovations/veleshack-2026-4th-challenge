@@ -1,0 +1,38 @@
+{
+  "Guarded Kelly": {
+    "reference_strategy": "Guarded Kelly",
+    "seeds": 100,
+    "mean_score": 17.122997,
+    "mean_idle": 4.4,
+    "mean_floor_violations": 0.5,
+    "mean_lsw_total": -202.4560104,
+    "beat_all_bots": 96,
+    "missed_rounds": 0,
+    "mean_paired_gain_percent": 0.0,
+    "paired_gain_approx_95ci": [
+      0.0,
+      0.0
+    ],
+    "improved_seeds": 0,
+    "mean_neighbors_delta": 0.0,
+    "mean_lsw_delta": 0.0
+  },
+  "Lookahead Planner": {
+    "reference_strategy": "Guarded Kelly",
+    "seeds": 100,
+    "mean_score": 19.05426,
+    "mean_idle": 9.31,
+    "mean_floor_violations": 0.54,
+    "mean_lsw_total": -199.90454542999998,
+    "beat_all_bots": 100,
+    "missed_rounds": 0,
+    "mean_paired_gain_percent": 11.685596466745645,
+    "paired_gain_approx_95ci": [
+      9.943053902005401,
+      13.42813903148589
+    ],
+    "improved_seeds": 98,
+    "mean_neighbors_delta": -0.7119899999999997,
+    "mean_lsw_delta": 2.55146497
+  }
+}
