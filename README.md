@@ -13,6 +13,8 @@ See [local development](docs/local-development.md) for native setup, a fresh gra
 
 See the online arena with all of our evaluated agents [here](https://cardanoedge-arena.fastapicloud.dev/).
 
+You can find the prepared presentation [here](docs/CardanoEdge_Pitch_Final.pdf).
+
 
 ## Run with Docker
 
@@ -75,8 +77,7 @@ To replay from round one, rerun the Windows command block above. Change
   Build from the repository root:
   `docker build -t cardanoedge:release agent-template`.
 - [x] README strategy write-up and both team members, below.
-- [ ] Three-minute video or confirmation of a live pitch: deferred until the
-  team verifies the release. No video or live-pitch commitment is included.
+- [x] Live pitch: [Presentation](docs/CardanoEdge_Pitch_Final.pdf)
 - [x] Optional best retained normal graded run (fresh release verification):
   [`results.json`](evidence/best-run/results.json) and
   [leaderboard screenshot](evidence/figures/leaderboard.png), a labeled replay
