@@ -5,6 +5,15 @@
 
 The agent runs **Cycle-Aware  Planner** with a guarded market-estimation fallback. The organizer arena, baselines, HTTP client, conformance suite and Dockerfile are retained unchanged. The measured **Lookahead Planner** comparator lives in `experiments/`, outside the agent image. Development variants and fitted models are excluded.
 
+## Evidence and verification
+
+Read [evaluation](docs/evaluation.md) for seed cohorts, selected experiments, score/win tables, HTTP faults, lease recovery and latency. Read [methodology](docs/methodology.md) for exact inputs, equations, candidate search, continuation and fallback. The [comparison figure](evidence/figures/paired-scores.png) and [paired CSV](evidence/paired-scores.csv) retain all 1,000 final comparisons. 
+
+See [local development](docs/local-development.md) for native setup, a fresh graded run and verification commands.
+
+See the online arena with all of our evaluated agents [here](https://cardanoedge-arena.fastapicloud.dev/).
+
+
 ## Run with Docker
 
 ### Ubuntu
@@ -82,10 +91,3 @@ A separate observer caches current-round public state. Missing or stale state us
 Battery tapering raised mean score from 13.51 to 16.83 on 100 paired seeds.  Guarded Kelly scored 16.82, i.e. more immediate optimization did not materially beat simple battery control. Lookahead then beat Guarded Kelly on 98/100 separate paired seeds. On 1.000 paired seeds, Cycle-Aware averaged 19.063 versus Lookahead's 18.849, won 620/1.000 comparisons, and beat every bot in 999/1.000 runs. Its mean per-seed gain was 1.390% compared to LookAhead, with a bootstrap 95% interval of 0.980-1.811%.
 
 The main cost is latency. Serial mean decisions were 99 versus 29 ms. Both passed normal HTTP core checks in 4/4 trials and recovered real lease expiry in 2/2. Higher stress exposed more missed bids for Cycle-Aware. Relative to Lookahead, neighbors' score and log social welfare declined slightly. We therefore report an own-score improvement, operational limits and swarm costs. A same-seed bot-only counterfactual also showed that adding our bidder reduced neighbors' combined score from 59.876 to 37.969.
-
-## Evidence and verification
-
-Read [evaluation](docs/evaluation.md) for seed cohorts, selected experiments, score/win tables, HTTP faults, lease recovery and latency. Read
-[methodology](docs/methodology.md) for exact inputs, equations, candidate search,  continuation and fallback. The [comparison figure](evidence/figures/paired-scores.png) and [paired CSV](evidence/paired-scores.csv) retain all 1,000 final comparisons. Evidence is historical unless explicitly marked as release verification.
-
-See [local development](docs/local-development.md) for native setup, a fresh graded run and verification commands.
